@@ -1191,6 +1191,7 @@ button {
 	min-height: 100vh;
 	width: 100%;
 	padding: 4rem 2rem;
+	padding-top: 5rem; /* Added line to prevent overlap */
 	z-index: 3;
 }
 
@@ -1647,3 +1648,40 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
+/* Navigation Menu */
+#top-nav {
+    position: fixed; /* Sticks the menu to the top of the viewport */
+    top: 0;
+    left: 0;
+    width: 100%; /* Spans the full width */
+    background-color: rgba(27, 31, 34, 0.9); /* Semi-transparent background */
+    z-index: 1000; /* Ensures it stays above other elements */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+#top-nav ul {
+    display: flex; /* Aligns items horizontally */
+    justify-content: center; /* Centers the menu items */
+    list-style: none; /* Removes default bullets */
+    margin: 0;
+    padding: 0;
+}
+
+#top-nav ul li {
+    margin: 0 1rem; /* Spacing between menu items */
+}
+
+#top-nav ul li a {
+    color: #ffffff; /* White text for links */
+    text-decoration: none; /* Removes underline */
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.75rem 1rem; /* Adds spacing inside menu items */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
+}
+
+#top-nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
+    color: #ffdd57; /* Accent color for hover */
+}
+
