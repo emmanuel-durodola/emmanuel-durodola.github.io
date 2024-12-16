@@ -1709,7 +1709,7 @@ button {
 
 /* Dropdown Menu */
 #dropdown-menu {
-    position: fixed;
+    position: absolute;
     top: 4rem; /* Adjust based on the button height */
     right: 1rem;
     background-color: rgba(27, 31, 34, 0.9);
