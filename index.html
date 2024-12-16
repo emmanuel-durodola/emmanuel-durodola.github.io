@@ -241,23 +241,35 @@
 
 			<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
-		<!--
 			<script src="assets/js/browser.min.js"></script>
-		
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-		-->
 			
 		<!-- Add this script at the end of the body -->
 		<script>
 			
-		    // Toggle the visibility of the menu
-		    document.getElementById('menu-toggle').addEventListener('click', function() {
-		        const dropdownMenu = document.getElementById('dropdown-menu');
-		        dropdownMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
-		        dropdownMenu.style.display = dropdownMenu.classList.contains('hidden') ? 'none' : 'block';
-		    });
+		    // Select elements
+			const menuToggle = document.getElementById('menu-toggle');
+			const dropdownMenu = document.getElementById('dropdown-menu');
+			
+			// Toggle menu visibility
+			menuToggle.addEventListener('click', function (e) {
+			    dropdownMenu.classList.toggle('hidden');
+			    e.stopPropagation(); // Prevent click from propagating to body
+			});
+			
+			// Close menu when clicking outside
+			document.addEventListener('click', function () {
+			    if (!dropdownMenu.classList.contains('hidden')) {
+				dropdownMenu.classList.add('hidden');
+			    }
+			});
+			
+			// Optional: Prevent menu close when clicking inside it
+			dropdownMenu.addEventListener('click', function (e) {
+			    e.stopPropagation();
+			});
       
 		</script>
 </body>
