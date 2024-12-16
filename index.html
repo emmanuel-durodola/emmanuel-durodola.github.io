@@ -248,28 +248,24 @@
 			
 		<!-- Add this script at the end of the body -->
 		<script>
-		    // Ensure the DOM is fully loaded
 		    document.addEventListener('DOMContentLoaded', function () {
-		        // Select the menu button and dropdown menu
 		        const menuToggle = document.getElementById('menu-toggle');
 		        const dropdownMenu = document.getElementById('dropdown-menu');
 		
-		        // Toggle the visibility of the menu when the button is clicked
+		        // Toggle dropdown menu visibility
 		        menuToggle.addEventListener('click', function (e) {
-		            dropdownMenu.classList.toggle('hidden'); // Toggle the 'hidden' class
-		            dropdownMenu.style.display = dropdownMenu.classList.contains('hidden') ? 'none' : 'block';
-		            e.stopPropagation(); // Prevent click from propagating to the document
+		            e.stopPropagation();
+		            dropdownMenu.classList.toggle('hidden');
 		        });
 		
-		        // Close the menu when clicking outside of it
+		        // Close the dropdown menu when clicking outside
 		        document.addEventListener('click', function () {
 		            if (!dropdownMenu.classList.contains('hidden')) {
-		                dropdownMenu.classList.add('hidden'); // Add 'hidden' to hide the menu
-		                dropdownMenu.style.display = 'none'; // Ensure display is set to none
+		                dropdownMenu.classList.add('hidden');
 		            }
 		        });
 		
-		        // Prevent the menu from closing when clicking inside it
+		        // Prevent menu from closing when clicking inside it
 		        dropdownMenu.addEventListener('click', function (e) {
 		            e.stopPropagation();
 		        });
