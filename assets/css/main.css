@@ -1746,6 +1746,6 @@ button {
 
 /* Utility Classes */
 .hidden {
-    display: none;
+    display: none !important;
 }
 
