@@ -1687,39 +1687,35 @@ button {
 /* Menu Button */
 #menu-button {
     position: fixed;
-    top: 1rem;
-    right: 1rem;
+    top: 1rem; /* Adjust distance from the top */
+    right: 1rem; /* Adjust distance from the right */
     z-index: 1000;
-    pointer-events: auto;
+    padding: 0; /* Remove extra padding */
 }
 
 #menu-button button {
-    background-color: rgba(27, 31, 34, 0.9); /* Semi-transparent background */
-    color: #ffffff; /* White text */
-    border: none;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    background: none; /* Remove background to make it flush */
+    border: none; /* Remove border */
+    color: #ffffff; /* White text color */
+    font-size: 2rem; /* Icon size (adjustable) */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: color 0.3s ease;
 }
 
 #menu-button button:hover {
-    background-color: rgba(27, 31, 34, 0.7); /* Darker background on hover */
+    color: #ffdd57; /* Accent color on hover */
 }
-
 /* Dropdown Menu */
 #dropdown-menu {
     position: absolute;
-    top: 4rem; /* Adjust based on the button height */
-    right: 1rem;
-    background-color: rgba(27, 31, 34, 0.9);
+    top: 3rem; /* Adjust based on the button height */
+    right: 0;
+    background-color: rgba(27, 31, 34, 0.95); /* Dark semi-transparent background */
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 999; /* Ensure it's above other elements */
-    padding: 1rem;
-    display: none; /* Initially hidden */
-    pointer-events: auto;
+    z-index: 999;
+    padding: 0.5rem 1rem; /* Adjust spacing */
+    display: none; /* Hidden by default */
 }
 
 #dropdown-menu ul {
@@ -1728,33 +1724,18 @@ button {
     padding: 0;
 }
 
-#dropdown-menu ul li {
-    margin: 0.5rem 0;
-}
-
 #dropdown-menu ul li a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
-    padding: 0.5rem 1rem;
     display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease, background 0.3s ease;
 }
 
 #dropdown-menu ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
     color: #ffdd57;
-}
-#dropdown-menu {
-    transition: opacity 0.3s ease, visibility 0.3s ease;
-    opacity: 0;
-    visibility: hidden;
-}
-
-#dropdown-menu:not(.hidden) {
-    display: block;
-    opacity: 1;
-    visibility: visible;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Utility Classes */
