@@ -1694,12 +1694,15 @@ button {
 }
 
 #menu-button button {
-    background: none; /* Remove background to make it flush */
+    background: none; /* Remove background */
     border: none; /* Remove border */
-    color: #ffffff; /* White text color */
-    font-size: 2rem; /* Icon size (adjustable) */
+    color: #ffffff; /* White text and icon */
+    font-size: 1.5rem; /* Adjust size of the icon and text */
     cursor: pointer;
-    transition: color 0.3s ease;
+    display: flex; /* Align icon and text in a row */
+    align-items: center; /* Vertically center align */
+    gap: 0.5rem; /* Add spacing between the icon and text */
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 #menu-button button:hover {
