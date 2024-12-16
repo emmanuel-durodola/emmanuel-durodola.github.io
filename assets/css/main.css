@@ -1694,10 +1694,10 @@ button {
 }
 
 #menu-button button {
-    background: none; /* No background */
-    border: none; /* No border */
-    outline: none; /* Remove focus outline */
-    box-shadow: none; /* Remove any shadow */
+    background: none !important; /* No background */
+    border: none !important; /* No border */
+    outline: none !important; /* Remove focus outline */
+    box-shadow: none !important; /* Remove any shadow */
     color: #ffffff; /* White text and icon */
     font-size: 1.5rem; /* Adjust size of the icon and text */
     cursor: pointer;
