@@ -1690,6 +1690,7 @@ button {
     top: 1rem;
     right: 1rem;
     z-index: 1000;
+    pointer-events: auto;
 }
 
 #menu-button button {
@@ -1718,6 +1719,7 @@ button {
     z-index: 999; /* Ensure it's above other elements */
     padding: 1rem;
     display: none; /* Initially hidden */
+    pointer-events: auto;
 }
 
 #dropdown-menu ul {
