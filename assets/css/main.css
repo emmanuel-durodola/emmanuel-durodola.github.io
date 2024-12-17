@@ -297,6 +297,13 @@ hr {
 	border-bottom: solid 1px #ffffff;
 	margin: 2.75rem 0;
 }
+/* Custom Section Break */
+.section-break {
+    border: none;
+    border-top: 3px dashed #444; /* Giant dashed line */
+    margin: 2.5rem auto; /* Vertical spacing */
+    width: 80%; /* Adjusted width */
+}
 
 .align-left {
 	text-align: left;
@@ -1723,4 +1730,24 @@ button {
     outline: none; /* Remove default */
     border-bottom: 2px solid #f0f0f0; /* Custom focus indicator */
 }
+/* Mini Page Styling */
+.mini-page {
+    background-color: rgba(27, 31, 34, 0.85); /* Dark semi-transparent background */
+    color: #fff; /* White text */
+    padding: 2rem; /* Add space inside the section */
+    margin: 2rem auto; /* Space between sections */
+    max-width: 800px; /* Limit width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    text-align: center; /* Center content */
+}
+
+.mini-page h2 {
+    font-size: 1.5rem; /* Heading size */
+    margin-bottom: 1rem; /* Space below heading */
+    border-bottom: 2px solid #444; /* Line under heading */
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
 
