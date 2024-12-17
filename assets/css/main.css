@@ -1145,7 +1145,7 @@ button {
 		-ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
 		transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
 		/* We can change the background image here. */
-		background-image: url("../../images/background.png");
+		background-image: url("../../images/bg.jpg");
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
@@ -1263,7 +1263,6 @@ button {
 			content: '';
 			display: block;
 			position: absolute;
-			/*position: fixed;*/
 			top: calc(-3.5rem - 1px);
 			left: calc(50% - 1px);
 			width: 1px;
@@ -1276,13 +1275,13 @@ button {
 	}
 
 		#header > :first-child:before {
-			display: none; /*change none to block -- i think this controls the bar*/
+			display: none;
 		}
 
 	#header .logo {
-		width: 2.5rem; /*change 5.5 to 2.5 */
-		height: 2.5rem; /*change 5.5 to 2.5 */
-		line-height: 2.5rem; /*change 5.5 to 2.5 */
+		width: 5.5rem;
+		height: 5.5rem;
+		line-height: 5.5rem;
 		border: solid 1px #ffffff;
 		border-radius: 100%;
 	}
@@ -1308,13 +1307,13 @@ button {
 			-webkit-transition-delay: 0.25s;
 			-ms-transition-delay: 0.25s;
 			transition-delay: 0.25s;
-			padding: 1rem 2rem; /* change 3 to 1 to bring out the cv button*/
+			padding: 3rem 2rem;
 			max-height: 40rem;
-			overflow: visible;
+			overflow: hidden;
 		}
 
 			#header .content .inner > :last-child {
-				margin-bottom: 1;
+				margin-bottom: 0;
 			}
 
 		#header .content p {
@@ -1328,20 +1327,17 @@ button {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;/* change*/
+		display: flex;
 		margin-bottom: 0;
 		list-style: none;
 		padding-left: 0;
 		border: solid 1px #ffffff;
 		border-radius: 4px;
-		flex-direction: column;
-		
 	}
 
 		#header nav ul li {
 			padding-left: 0;
 			border-left: solid 1px #ffffff;
-			
 		}
 
 			#header nav ul li:first-child {
@@ -1349,7 +1345,7 @@ button {
 			}
 
 			#header nav ul li a {
-				display: flex;
+				display: block;
 				min-width: 7.5rem;
 				height: 2.75rem;
 				line-height: 2.75rem;
@@ -1358,8 +1354,6 @@ button {
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				border-bottom: 0;
-				position: relative;
-				z-index: 10;
 			}
 
 				#header nav ul li a:hover {
@@ -1418,7 +1412,7 @@ button {
 	@media screen and (max-width: 980px) {
 
 		#header .content p br {
-			display: block;
+			display: none;
 		}
 
 	}
@@ -1426,7 +1420,7 @@ button {
 	@media screen and (max-width: 736px) {
 
 		#header > * {
-			margin-top: rem;
+			margin-top: 2rem;
 		}
 
 			#header > *:before {
@@ -1445,8 +1439,7 @@ button {
 			}
 
 		#header .content .inner {
-			padding: 0.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
-			margin-bottom: 2.5rem; /* Add space below navigation */
+			padding: 2.5rem 1rem;
 		}
 
 		#header .content p {
@@ -1462,7 +1455,7 @@ button {
 		}
 
 			#header .content .inner {
-				padding: 0.5rem 0;
+				padding: 2.5rem 0;
 			}
 
 			#header nav ul {
@@ -1472,7 +1465,6 @@ button {
 				flex-direction: column;
 				min-width: 10rem;
 				max-width: 100%;
-				 
 			}
 
 				#header nav ul li {
@@ -1489,8 +1481,6 @@ button {
 						line-height: 3rem;
 						min-width: 0;
 						width: 100%;
-						position: relative;
-						z-index: 10;
 					}
 
 			#header nav.use-middle:after {
@@ -1513,7 +1503,7 @@ button {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
-	display: flex !important;
+	display: flex;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
@@ -1528,7 +1518,7 @@ button {
 	flex-direction: column;
 	position: relative;
 	max-width: 100%;
-	z-index: 10;
+	z-index: 3;
 }
 
 	#main article {
@@ -1657,84 +1647,3 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
-#nav-sections {
-    display: flex; /* Arrange items side by side */
-    flex-direction: column; /* Stack items vertically */
-    gap: 2rem; /* Add spacing between sections */
-    text-align: center; /* Center-align content */
-    padding: 2rem;
-}
-
-#nav-sections ul {
-    list-style: none; /* Remove default bullet points */
-    padding: 0;
-    margin: 0;
-}
-
-.nav-section {
-    background: rgba(0, 0, 0, 0.7); /* Subtle background color */
-    border-radius: 8px;
-    padding: 1.5rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
-}
-
-.nav-section h3 {
-    margin-bottom: 1rem;
-    font-size: 1.5rem;
-    color: #ffffff; /* Match your theme */
-}
-.nav-section {
-    border: none; /* Remove any border */
-    position: relative; /* Ensure pseudo-elements don't affect layout */
-}
-
-.nav-section p {
-    font-size: 1rem;
-    margin-bottom: 1rem;
-    color: #cccccc; /* Subtle text color */
-}
-.nav-section:before,
-.nav-section:after {
-    content: none; /* Disable any pseudo-elements */
-}
-
-.nav-section a.button {
-    display: inline-block;
-    background: #21b2a6; /* Button background color */
-    color: #ffffff; /* Button text color */
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    font-size: 0.9rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-}
-
-.nav-section a.button:hover {
-    background: #1a8d83; /* Darker shade on hover */
-}
-
-@media screen and (max-width: 768px) {
-    #nav-sections {
-        gap: 1rem;
-        padding: 1rem;
-    }
-
-    .nav-section {
-        padding: 1rem;
-    }
-
-    .nav-section h3 {
-        font-size: 1.25rem;
-    }
-
-    .nav-section p {
-        font-size: 0.9rem;
-    }
-
-    .nav-section a.button {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
-    }
-}
