@@ -1754,14 +1754,14 @@ button {
     width: 100%; /* Full width */
     padding: 4rem 2rem; /* Add spacing inside the sections */
     margin: 0; /* Remove default margin */
-    background-color: rgba(27, 31, 34, 0.95); /* Dark semi-transparent background */
+    background-color: none; /* Dark semi-transparent background */
     color: #fff; /* White text */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Floating shadow effect */
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-radius: 8px; /* Soft rounded corners */
+    border-radius: 0; /* Soft rounded corners */
 }
 
 .wrapper.alt.style2 h2 {
@@ -1772,7 +1772,7 @@ button {
 }
 /* Footer Styling */
 #footer {
-    background-color: #1b1f23; /* Dark background */
+    background-color: none; /* Dark background */
     color: #fff; /* White text */
     padding: 3rem 2rem; /* Spacing inside the footer */
     text-align: center; /* Center content */
