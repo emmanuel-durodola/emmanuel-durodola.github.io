@@ -1269,6 +1269,7 @@ button {
 			width: 1px;
 			height: calc(3.5rem + 1px);
 			background: #ffffff;
+			pointer-events: none;
 		}
 
 	#header > :first-child {
@@ -1373,9 +1374,10 @@ button {
 		position: absolute;
 		top: calc(-3.5rem - 1px);
 		left: calc(50% - 1px);
-		width: 0;
+		width: 1px;
 		height: calc(3.5rem + 1px);
-		background: #ffffff;*/
+		background: #ffffff;
+		pointer-events: none;
 	}
 
 	#header nav.use-middle ul li.is-middle {
