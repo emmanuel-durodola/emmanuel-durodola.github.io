@@ -999,10 +999,8 @@ button,
 	-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 	background-color: transparent;
-	/*width: 200px;*/
 	border-radius: 4px;
 	border: 0;
-	/*border: 2px;*/
 	box-shadow: inset 0 0 0 1px #ffffff;
 	color: #ffffff !important;
 	cursor: pointer;
@@ -1014,15 +1012,11 @@ button,
 	line-height: 2.75rem;
 	outline: 0;
 	padding: 0 1.25rem 0 1.35rem;
-	/*padding: 15px 0;*/
-	/*margin: 20px 10px;*/
 	text-align: center;
 	text-decoration: none;
 	text-transform: uppercase;
 	white-space: nowrap;
-	/*cursor: pointer;*/
 }
-
 
 	input[type="submit"]:hover,
 	input[type="reset"]:hover,
@@ -1229,7 +1223,6 @@ button {
 
 	}
 
-
 /* Header */
 
 #header {
@@ -1270,18 +1263,15 @@ button {
 			content: '';
 			display: block;
 			position: absolute;
-			/*top: calc(-5.5rem - 1px);*/
-			bottom: -1px;
-			left: 50%;
+			top: calc(-3.5rem - 1px);
+			left: calc(50% - 1px);
 			width: 1px;
-			height: 50px;
+			height: calc(3.5rem + 1px);
 			background: #ffffff;
-			top: auto;
 		}
 
 	#header > :first-child {
 		margin-top: 0;
-		
 	}
 
 		#header > :first-child:before {
@@ -1657,119 +1647,3 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
-#menu {
-		-moz-transform: translateX(20em);
-		-webkit-transform: translateX(20em);
-		-ms-transform: translateX(20em);
-		transform: translateX(20em);
-		-moz-transition: -moz-transform 0.5s ease;
-		-webkit-transition: -webkit-transform 0.5s ease;
-		-ms-transition: -ms-transform 0.5s ease;
-		transition: transform 0.5s ease;
-		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
-		color: #ffffff;
-		height: 100%;
-		max-width: 80%;
-		overflow-y: auto;
-		padding: 3em 2em;
-		position: fixed;
-		right: 0;
-		top: 0;
-		width: 20em;
-		z-index: 1000;
-	}
-#menu .menuToggle {
-    position: absolute;
-    top: 10px; /* Adjust the vertical position */
-    right: 10px; /* Align to the right */
-    z-index: 1000; /* Ensure it appears above other elements */
-}
-
-		#menu ul {
-			list-style: none;
-			margin: none;
-			padding: 0;
-		}
-
-			#menu ul > li {
-				/*border-top: solid 1px rgba(0, 0, 0, 0.125);*/
-				border-top: none;
-				border-bottom: none;
-				margin: 0.5em 0 0 0;
-				padding: 0.5em 0 0 0;
-			}
-
-				#menu ul > li:first-child {
-					border-top: 0 !important;
-					margin-top: 0 !important;
-					padding-top: 0 !important;*/
-					margin: 10px 0; /* Spacing between items */
-				}
-				.menuToggle.active + #menu {
-    					display: block; /* Show dropdown when button is active */
-
-				#menu ul > li > a {
-					border: 0;
-					color: inherit;
-					/*display: block;*/
-					display: none;
-					font-size: 0.8em;
-					letter-spacing: 0.225em;
-					outline: 0;
-					text-decoration: none;
-					text-transform: uppercase;
-				}
-
-					@media screen and (max-width: 736px) {
-
-						#menu ul > li > a {
-							line-height: 3em;
-						}
-
-					}
-
-		#menu .close {
-			background-image: url("images/close.svg");
-			background-position: 4.85em 1em;
-			background-repeat: no-repeat;
-			border: 0;
-			cursor: pointer;
-			display: none;
-			height: 3em;
-			position: absolute;
-			right: 0;
-			top: 0;
-			vertical-align: middle;
-			width: 7em;
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#menu {
-				padding: 3em 1.5em;
-			}
-
-		}
-
-	body.is-menu-visible #page-wrapper {
-		opacity: 0.35;
-	}
-
-		body.is-menu-visible #page-wrapper:before {
-			display: none;
-		}
-
-	body.is-menu-visible #menu {
-		-moz-transform: translateX(0);
-		-webkit-transform: translateX(0);
-		-ms-transform: translateX(0);
-		transform: translateX(0);
-	}
-	/* Remove unwanted top bar from the header */
-/* #header .content {
-    border-top: none;
-    border-bottom: solid 3px #444; /* Optional bottom border 
-    padding-bottom: 1rem;
-} */
-
