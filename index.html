@@ -5,70 +5,15 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
-    <style>
-        /* Remove global margin and padding */
-        html, body {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        /* Full-width floating sections */
-        .floating-section {
-            width: 100%; /* Allow sections to take full width */
-            height: 25vh; /* Quarter of the viewport height */
-            margin: 2rem 0; /* Spacing between sections */
-            background-color: rgba(27, 31, 34, 0.9); /* Slightly transparent background */
-            color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Floating effect */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            position: relative;
-            z-index: 10;
-            border-radius: 8px; /* Soft rounded corners */
-        }
-
-        .floating-section h2 {
-            font-size: 1.8rem;
-            margin: 0;
-            text-align: center;
-        }
-        /* Contact section centered like the header */
-        #contact {
-            height: 25vh; /* Keep the quarter height */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: rgba(27, 31, 34, 0.9);
-            color: #fff;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            text-align: center;
-            position: relative;
-            z-index: 10;
-            border-radius: 8px;
-            margin: 0; /* Remove any margin */
-        }
-        /* Remove top border and keep only bottom border in header */
-        #header .content {
-            border-top: none; /* Remove the top bar */
-            border-bottom: 3px solid #444; /* Add bottom border */
-            padding-bottom: 1rem; /* Add space below the content */
-        }
-
-    </style>
 </head>
 <body class="is-preload">
     <!-- Menu Button -->
     <div class="menu-container">
-        <button id="menu-button" class="menu-button">
-            <span class="menu-text">Menu</span> <span class="menu-icon">&#9776;</span>
-        </button>
         <ul id="menu" class="menu hidden">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#community">Community</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li class="menu-item"><a href="#about">About Me</a></li>
+            <li class="menu-item"><a href="#research">Research</a></li>
+            <li class="menu-item"><a href="#community">Community</a></li>
+            <li class="menu-item"><a href="#footer">Contact</a></li>
         </ul>
     </div>
 
@@ -86,26 +31,24 @@
             </div>
         </header>
 
-        <!-- Floating Sections -->
-        <section id="about" class="floating-section">
+        <!-- Sections within Wrapper -->
+        <section id="about" class="wrapper alt style2">
             <h2>About Me</h2>
         </section>
 
-        <section id="research" class="floating-section">
+        <section id="research" class="wrapper alt style2">
             <h2>Research</h2>
         </section>
 
-        <section id="community" class="floating-section">
+        <section id="community" class="wrapper alt style2">
             <h2>Community</h2>
         </section>
 
-        <!-- Contact Section on Main Page -->
-        <section id="contact" class="floating-section">
-            <h2>Contact</h2>
-        </section>
-
-        <!-- Footer -->
+        <!-- Footer with Contact -->
         <footer id="footer">
+            <h2>Contact</h2>
+            <p>Feel free to reach out for collaborations or inquiries.</p>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
             <p class="copyright">&copy; Emmanuel Durodola. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
         </footer>
     </div>
