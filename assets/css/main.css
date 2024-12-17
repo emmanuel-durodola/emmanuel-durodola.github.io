@@ -1369,7 +1369,7 @@ button {
 
 	#header nav.use-middle:after {
 		content: '';
-		display: block;
+		display: flex;
 		position: absolute;
 		top: calc(-3.5rem - 1px);
 		left: calc(50% - 1px);
