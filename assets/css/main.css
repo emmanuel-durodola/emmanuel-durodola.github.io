@@ -1657,12 +1657,13 @@ button {
 
 /* Menu Button */
 .menu-button {
-    font-size: 28px; /* Size of the ☰ symbol */
+    font-size: 15px; /* Size of the ☰ symbol */
     background: none;
     border: none;
     color: #fff; /* White color */
     cursor: pointer;
     outline: none;
+	box-shadow: none; /* Ensures no shadow or border */
 }
 
 /* Dropdown Menu Styling */
@@ -1700,4 +1701,8 @@ button {
 
 .menu.show {
     display: block;
+}
+.menu-button:focus {
+    outline: none; /* Remove default */
+    border-bottom: 2px solid #f0f0f0; /* Custom focus indicator */
 }
