@@ -10,6 +10,68 @@
 		for the web browser when loading the page	
 	-->
 	<head>
+		<style>
+    /* Basic Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #222;
+        color: #fff;
+        margin: 0;
+        padding: 0;
+    }
+
+    /* Menu Button */
+    #menu-button {
+        position: fixed;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000;
+    }
+
+    #menu-button button {
+        background: none;
+        border: none;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    /* Dropdown Menu */
+    #dropdown-menu {
+        position: absolute;
+        top: 3rem;
+        right: 1rem;
+        background-color: rgba(27, 31, 34, 0.95);
+        padding: 1rem;
+        border-radius: 4px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        display: none; /* Initially hidden */
+    }
+
+    #dropdown-menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #dropdown-menu ul li {
+        margin: 0.5rem 0;
+    }
+
+    #dropdown-menu ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    /* Utility Class */
+    .hidden {
+        display: none !important;
+    }
+</style>
+
 		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
 		<title>Emmanuel Durodola</title>
 		<meta charset="utf-8" />
@@ -252,36 +314,28 @@
         const menuToggle = document.getElementById('menu-toggle');
         const dropdownMenu = document.getElementById('dropdown-menu');
 
-        // Check if the elements exist
-        if (menuToggle && dropdownMenu) {
-            console.log("Menu button and dropdown menu found");
+        // Toggle the 'hidden' class
+        menuToggle.addEventListener('click', function (e) {
+            e.stopPropagation();
+            dropdownMenu.classList.toggle('hidden');
+            console.log('Menu button clicked. Dropdown classes:', dropdownMenu.className);
+        });
 
-            // Toggle the 'hidden' class when the button is clicked
-            menuToggle.addEventListener('click', function (e) {
-                e.stopPropagation(); // Prevent event from bubbling up
-                dropdownMenu.classList.toggle('hidden');
-                
-                // Log the updated class list for debugging
-                console.log("Dropdown menu classes:", dropdownMenu.className);
-            });
+        // Close the dropdown when clicking outside
+        document.addEventListener('click', function () {
+            if (!dropdownMenu.classList.contains('hidden')) {
+                dropdownMenu.classList.add('hidden');
+                console.log('Dropdown menu hidden.');
+            }
+        });
 
-            // Close the dropdown menu when clicking outside
-            document.addEventListener('click', function () {
-                if (!dropdownMenu.classList.contains('hidden')) {
-                    dropdownMenu.classList.add('hidden');
-                    console.log("Dropdown menu hidden after clicking outside");
-                }
-            });
-
-            // Prevent clicks inside the dropdown menu from closing it
-            dropdownMenu.addEventListener('click', function (e) {
-                e.stopPropagation();
-            });
-        } else {
-            console.error("Menu button or dropdown menu not found in the DOM");
-        }
+        // Prevent clicks inside the dropdown from closing it
+        dropdownMenu.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
     });
 </script>
+
 
 </body>
 
