@@ -1442,7 +1442,7 @@ button {
 			}
 
 		#header .content .inner {
-			padding: 4.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
+			padding: 0.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
 		}
 
 		#header .content p {
