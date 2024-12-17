@@ -1327,29 +1327,31 @@ button {
 		}
 
 	#header nav ul {
-		/*display: -moz-flex;
+		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: block;/* change
+		display: flex;/* change*/
 		margin-bottom: 0;
 		list-style: none;
 		padding-left: 0;
 		border: solid 1px #ffffff;
-		border-radius: 4px;*/
-		    display: block;
-		    margin-bottom: 0;
-		    list-style: none;
-		    padding-left: 0;
-		    border: solid 1px #ffffff;
-		    border-radius: 4px;
+		border-radius: 4px;
+		flex-direction: column;
+    		gap: 0.5rem; /* Adds vertical spacing between items */
+	   /* display: block;
+	    margin-bottom: 0;
+	    list-style: none;
+	    padding-left: 0;
+	    border: solid 1px #ffffff;
+	    border-radius: 4px;*/
 		
 	}
 
 		#header nav ul li {
 			padding-left: 0;
 			border-left: solid 1px #ffffff;
-			display: block; /* Ensure items are stacked vertically */
-    			margin: 0; /* Optional margin adjustments */
+			/*display: block; /* Ensure items are stacked vertically */
+    			/*margin: 0; /* Optional margin adjustments */
 		}
 
 			#header nav ul li:first-child {
