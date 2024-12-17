@@ -1348,7 +1348,7 @@ button {
 			}
 
 			#header nav ul li a {
-				display: block;
+				display: flex;
 				min-width: 7.5rem;
 				height: 2.75rem;
 				line-height: 2.75rem;
@@ -1357,6 +1357,8 @@ button {
 				letter-spacing: 0.2rem;
 				font-size: 0.8rem;
 				border-bottom: 0;
+				position: relative;
+				z-index: 10;
 			}
 
 				#header nav ul li a:hover {
@@ -1369,13 +1371,13 @@ button {
 
 	#header nav.use-middle:after {
 		content: '';
-		display: block;
-		position: absolute;
+		display: none;
+		/*position: absolute;
 		top: calc(-3.5rem - 1px);
 		left: calc(50% - 1px);
 		width: 1px;
 		height: calc(3.5rem + 1px);
-		background: #ffffff;
+		background: #ffffff;*/
 	}
 
 	#header nav.use-middle ul li.is-middle {
@@ -1468,7 +1470,7 @@ button {
 				flex-direction: column;
 				min-width: 10rem;
 				max-width: 100%;
-				margin-bottom: 1.5rem; /* Add space below navigation */
+				margin-bottom: 2.5rem; /* Add space below navigation */
 			}
 
 				#header nav ul li {
@@ -1485,6 +1487,8 @@ button {
 						line-height: 3rem;
 						min-width: 0;
 						width: 100%;
+						position: relative;
+						z-index: 10;
 					}
 
 			#header nav.use-middle:after {
