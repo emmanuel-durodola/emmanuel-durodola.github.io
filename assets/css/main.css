@@ -1313,7 +1313,7 @@ button {
 		}
 
 			#header .content .inner > :last-child {
-				margin-bottom: 0;
+				margin-bottom: 1rem;
 			}
 
 		#header .content p {
