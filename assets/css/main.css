@@ -1309,7 +1309,7 @@ button {
 			transition-delay: 0.25s;
 			padding: 3rem 2rem;
 			max-height: 40rem;
-			overflow: hidden;
+			overflow: visible;
 		}
 
 			#header .content .inner > :last-child {
@@ -1441,7 +1441,7 @@ button {
 
 		#header .content .inner {
 			padding: 2.5rem 1rem;
-			margin-bottom: 2.5rem;
+			margin-bottom: 4rem;
 		}
 
 		#header .content p {
