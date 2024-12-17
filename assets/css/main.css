@@ -1657,15 +1657,20 @@ button {
 
 /* Menu Button */
 .menu-button {
-    font-size: 20px !important; /* Set a consistent size */
-    background: none; /* No background */
-    border: none !important; /* Remove borders */
-    color: #fff; /* White ☰ symbol */
+    font-size: 15px !important; /* Uniform size for text and symbol */
+    background: none;
+    border: none !important;
+    color: #fff;
     cursor: pointer;
-    outline: none !important; /* Remove focus outline */
-    box-shadow: none !important; /* Remove box shadow */
-    padding: 5px; /* Optional padding */
+    outline: none !important;
+    box-shadow: none !important;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center text and symbol vertically */
+    gap: 5px; /* Add a small space between "Menu" and ☰ */
+    padding: 5px; /* Optional padding for better spacing */
+    line-height: 1; /* Prevent extra spacing */
 }
+
 
 /* Dropdown Menu Styling */
 .menu {
