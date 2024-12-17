@@ -1685,6 +1685,7 @@ button {
 }
 
 .menu li a {
+	font-size: 14px; /* Adjust link size */
     color: #fff; /* Text color */
     text-decoration: none;
     display: block;
@@ -1705,4 +1706,16 @@ button {
 .menu-button:focus {
     outline: none; /* Remove default */
     border-bottom: 2px solid #f0f0f0; /* Custom focus indicator */
+}
+/* Responsive Fix: Adjust for Small and Large Screens */
+@media (min-width: 768px) { /* For larger screens */
+    .menu-button {
+        font-size: 20px; /* Keeps button small on desktop */
+    }
+}
+
+@media (max-width: 767px) { /* For mobile screens */
+    .menu-button {
+        font-size: 20px; /* Keeps size consistent on mobile */
+    }
 }
