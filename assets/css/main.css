@@ -1337,13 +1337,6 @@ button {
 		border: solid 1px #ffffff;
 		border-radius: 4px;
 		flex-direction: column;
-    		gap: 0.5rem; /* Adds vertical spacing between items */
-	   /* display: block;
-	    margin-bottom: 0;
-	    list-style: none;
-	    padding-left: 0;
-	    border: solid 1px #ffffff;
-	    border-radius: 4px;*/
 		
 	}
 
