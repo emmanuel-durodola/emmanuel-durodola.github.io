@@ -6,45 +6,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* Smooth transitions between sections */
+        /* Full-width mini pages with float effect */
         .mini-page {
-            padding: 2rem;
-            margin: 0;
-            background-color: rgba(27, 31, 34, 0.85);
-            color: #fff;
+            padding: 3rem 2rem; /* Increase padding */
+            margin: 0; /* Remove gaps */
+            width: 100%; /* Full width */
+            background-color: rgba(27, 31, 34, 0.95); /* Slightly transparent background */
+            color: #fff; /* White text */
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 1rem;
+            gap: 2rem; /* Spacing between image and text */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Floating effect */
+            position: relative;
+            z-index: 10; /* Float above background */
         }
 
         .mini-page:nth-child(even) {
             flex-direction: row-reverse;
         }
 
+        /* Images within mini pages */
         .mini-page img {
-            width: 200px;
+            width: 250px;
             height: auto;
             object-fit: cover;
             border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow */
         }
 
         .mini-page-content {
-            flex: 1;
+            flex: 1; /* Expand content */
+            text-align: left;
         }
 
-        /* Remove borders and spacing from section breaks */
-        hr, .section-break {
-            display: none; /* Completely hide */
-            border: none; /* Remove any borders */
-            margin: 0; /* Remove any spacing */
+        /* Contact section on the main page */
+        #contact {
+            padding: 4rem 2rem;
+            background-color: rgba(27, 31, 34, 0.95);
+            color: #fff;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            position: relative;
+            z-index: 10;
         }
 
-        /* Header border styling */
-        #header .content {
-            border-top: none;
-            border-bottom: solid 3px #444;
-            padding-bottom: 1rem;
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #444;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
         }
     </style>
 </head>
@@ -55,9 +73,10 @@
             <span class="menu-text">Menu</span> <span class="menu-icon">&#9776;</span>
         </button>
         <ul id="menu" class="menu hidden">
-            <li><a href="about.html">About Me</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#about-summary">About Me</a></li>
+            <li><a href="#research-summary">Research</a></li>
+            <li><a href="#community-summary">Community</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
 
@@ -92,12 +111,19 @@
             </div>
         </section>
 
-        <section id="contact-summary" class="mini-page">
-            <img src="images/contact.jpg" alt="Contact">
+        <section id="community-summary" class="mini-page">
+            <img src="images/community.jpg" alt="Community">
             <div class="mini-page-content">
-                <h2>Contact</h2>
-                <p>Feel free to reach out to me for collaborations or inquiries. <a href="contact.html">Read more...</a></p>
+                <h2>Community</h2>
+                <p>Discover my involvement in community outreach, collaborations, and mentorship activities. <a href="community.html">Read more...</a></p>
             </div>
+        </section>
+
+        <!-- Contact Section on Main Page -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Feel free to reach out to me for collaborations, inquiries, or professional connections.</p>
+            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
         </section>
 
         <!-- Footer -->
