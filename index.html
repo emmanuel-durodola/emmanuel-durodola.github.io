@@ -69,14 +69,14 @@ i<!DOCTYPE HTML>
 							</div>
 						</div>
 						<!-- This is the navigation menu -->
-						<nav>
-							<!-- This element makes an "Unordered List" -->
+						<!-- <nav>
+							<!-- This element makes an "Unordered List" 
 							<ul>
-								<!-- This is a "List Item" -->
+								<!-- This is a "List Item" 
 								<li>
 									<!-- 	Note that this links to #about, which will move the page to wherever
 										the element with the id "about" exists.
-									-->
+									
 									<a href="#about">About Me </a>
 										
 								</li>
@@ -92,9 +92,34 @@ i<!DOCTYPE HTML>
 								-->
 								<!-- <li>
 									<a href="images/Astronomy.jpg">My CV</a>
-								</li> -->
+								</li> 
 							</ul>
+						</nav> -->
+						<nav id="nav-sections">
+						    <ul>
+						        <!-- About Me Section -->
+						        <li class="nav-section">
+						            <h3>About Me</h3>
+						            <p>A brief introduction to my background and interests in astronomy.</p>
+						            <a href="#about" class="button small">Learn More</a>
+						        </li>
+						
+						        <!-- Research Section -->
+						        <li class="nav-section">
+						            <h3>Research</h3>
+						            <p>Discover my exciting projects on black holes and galaxy evolution.</p>
+						            <a href="#research" class="button small">Learn More</a>
+						        </li>
+						
+						        <!-- Community Section -->
+						        <li class="nav-section">
+						            <h3>Community</h3>
+						            <p>Learn about my teaching, outreach, and equity efforts in astronomy.</p>
+						            <a href="#community" class="button small">Learn More</a>
+						        </li>
+						    </ul>
 						</nav>
+
 					</header>
 
 					<!-- These are the "cards" that appear when you click the buttons on the main page -->
