@@ -1657,18 +1657,28 @@ button {
 
 /* Menu Button */
 .menu-button {
-    font-size: 15px !important; /* Uniform size for text and symbol */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center items vertically */
+    gap: 5px; /* Space between "Menu" and ☰ */
     background: none;
     border: none !important;
     color: #fff;
     cursor: pointer;
     outline: none !important;
     box-shadow: none !important;
-    display: flex; /* Align items horizontally */
-    align-items: center; /* Center text and symbol vertically */
-    gap: 5px; /* Add a small space between "Menu" and ☰ */
-    padding: 5px; /* Optional padding for better spacing */
+    padding: 5px;
+}
+
+/* Style for the "Menu" text */
+.menu-button .menu-text {
+    font-size: 12px !important; /* Smaller size for the word "Menu" */
     line-height: 1; /* Prevent extra spacing */
+}
+
+/* Style for the ☰ symbol */
+.menu-button .menu-icon {
+    font-size: 20px !important; /* Larger size for the ☰ symbol */
+    line-height: 1; /* Ensures proper alignment */
 }
 
 
