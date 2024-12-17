@@ -6,61 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* Full-width mini pages */
-        .mini-page {
-            margin: 0; /* Remove margins */
-            width: 100vw; /* Full viewport width */
-            display: flex; /* Flex layout for image and content */
-            align-items: center; /* Vertically align content */
-            position: relative; /* Stay above background */
+        /* Full-width floating sections */
+        .floating-section {
+            width: 100%; /* Allow sections to take full width */
+            height: 25vh; /* Quarter of the viewport height */
+            margin: 2rem 0; /* Spacing between sections */
+            background-color: rgba(27, 31, 34, 0.9); /* Slightly transparent background */
+            color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Floating effect */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
             z-index: 10;
-            background-color: rgba(27, 31, 34, 0.95); /* Dark semi-transparent background */
-        }
-        
-        /* Images bordering the mini pages */
-        .mini-page img {
-            width: 25%; /* Image takes 25% of the screen width */
-            height: auto; /* Adjust height based on content */
-            object-fit: cover; /* Ensure the image covers its container */
-            flex-shrink: 0; /* Prevent the image from shrinking */
-        }
-        
-        /* Mini-page text content */
-        .mini-page-content {
-            flex: 1; /* Let content fill the remaining space */
-            padding: 2rem; /* Space inside the text section */
-            color: #fff; /* White text */
-            text-align: left;
-        }
-        
-        .mini-page-content h2 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-            border-bottom: 2px solid #444; /* Subtle underline for headings */
-            padding-bottom: 0.5rem;
-        }
-        
-        .mini-page-content p {
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin-bottom: 1rem;
-        }
-        
-        .mini-page-content a {
-            color: #f0f0f0;
-            text-decoration: underline;
-        }
-        
-        .mini-page-content a:hover {
-            color: #ccc; /* Lighten link color on hover */
-        }
-        
-        /* Alternating image position for even mini pages */
-        .mini-page:nth-child(even) {
-            flex-direction: row-reverse;
+            border-radius: 8px; /* Soft rounded corners */
         }
 
-
+        .floating-section h2 {
+            font-size: 1.8rem;
+            margin: 0;
+            text-align: center;
+        }
         /* Remove top border and keep only bottom border in header */
         #header .content {
             border-top: none; /* Remove the top bar */
@@ -77,9 +43,9 @@
             <span class="menu-text">Menu</span> <span class="menu-icon">&#9776;</span>
         </button>
         <ul id="menu" class="menu hidden">
-            <li><a href="#about-summary">About Me</a></li>
-            <li><a href="#research-summary">Research</a></li>
-            <li><a href="#community-summary">Community</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#research">Research</a></li>
+            <li><a href="#community">Community</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </div>
@@ -98,36 +64,22 @@
             </div>
         </header>
 
-        <!-- Mini Summaries -->
-        <section id="about-summary" class="mini-page">
-            <img src="images/about.jpg" alt="About Me">
-            <div class="mini-page-content">
-                <h2>About Me</h2>
-                <p>Learn more about my education, research interests, and professional background. <a href="about.html">Read more...</a></p>
-            </div>
+        <!-- Floating Sections -->
+        <section id="about" class="floating-section">
+            <h2>About Me</h2>
         </section>
 
-        <section id="research-summary" class="mini-page">
-            <img src="images/research.jpg" alt="Research">
-            <div class="mini-page-content">
-                <h2>Research</h2>
-                <p>Explore my current and past research projects, posters, and publications. <a href="research.html">Read more...</a></p>
-            </div>
+        <section id="research" class="floating-section">
+            <h2>Research</h2>
         </section>
 
-        <section id="community-summary" class="mini-page">
-            <img src="images/community.jpg" alt="Community">
-            <div class="mini-page-content">
-                <h2>Community</h2>
-                <p>Discover my involvement in community outreach, collaborations, and mentorship activities. <a href="community.html">Read more...</a></p>
-            </div>
+        <section id="community" class="floating-section">
+            <h2>Community</h2>
         </section>
 
         <!-- Contact Section on Main Page -->
-        <section id="contact">
+        <section id="contact" class="floating-section">
             <h2>Contact</h2>
-            <p>Feel free to reach out to me for collaborations, inquiries, or professional connections.</p>
-            <p>Email: <a href="mailto:example@example.com">example@example.com</a></p>
         </section>
 
         <!-- Footer -->
