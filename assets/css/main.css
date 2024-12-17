@@ -1423,7 +1423,7 @@ button {
 	@media screen and (max-width: 736px) {
 
 		#header > * {
-			margin-top: 2rem;
+			margin-top: rem;
 		}
 
 			#header > *:before {
@@ -1458,7 +1458,7 @@ button {
 		}
 
 			#header .content .inner {
-				padding: 2.5rem 0;
+				padding: 0.5rem 0;
 			}
 
 			#header nav ul {
@@ -1468,6 +1468,7 @@ button {
 				flex-direction: column;
 				min-width: 10rem;
 				max-width: 100%;
+				margin-bottom: 1.5rem; /* Add space below navigation */
 			}
 
 				#header nav ul li {
