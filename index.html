@@ -6,13 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* Giant line styling */
-        .section-break {
-            border: none;
-            border-top: 3px dashed #444;
-            margin: 2rem auto;
-            width: 80%;
+        /* Smooth transitions between sections */
+        .mini-page {
+            padding: 2rem;
+            margin: 0;
+            background-color: rgba(27, 31, 34, 0.85);
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
         }
+
+        .mini-page:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .mini-page img {
+            width: 200px;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .mini-page-content {
+            flex: 1;
+        }
+
+        /* Remove solid borders */
+        .section-break {
+            display: none;
+        }
+
         /* Header border styling */
         #header .content {
             border-top: none;
@@ -50,20 +75,27 @@
 
         <!-- Mini Summaries -->
         <section id="about-summary" class="mini-page">
-            <h2>About Me</h2>
-            <p>Learn more about my education, research interests, and professional background. <a href="about.html">Read more...</a></p>
+            <img src="images/about.jpg" alt="About Me">
+            <div class="mini-page-content">
+                <h2>About Me</h2>
+                <p>Learn more about my education, research interests, and professional background. <a href="about.html">Read more...</a></p>
+            </div>
         </section>
-        <hr class="section-break">
 
         <section id="research-summary" class="mini-page">
-            <h2>Research</h2>
-            <p>Explore my current and past research projects, posters, and publications. <a href="research.html">Read more...</a></p>
+            <img src="images/research.jpg" alt="Research">
+            <div class="mini-page-content">
+                <h2>Research</h2>
+                <p>Explore my current and past research projects, posters, and publications. <a href="research.html">Read more...</a></p>
+            </div>
         </section>
-        <hr class="section-break">
 
         <section id="contact-summary" class="mini-page">
-            <h2>Contact</h2>
-            <p>Feel free to reach out to me for collaborations or inquiries. <a href="contact.html">Read more...</a></p>
+            <img src="images/contact.jpg" alt="Contact">
+            <div class="mini-page-content">
+                <h2>Contact</h2>
+                <p>Feel free to reach out to me for collaborations or inquiries. <a href="contact.html">Read more...</a></p>
+            </div>
         </section>
 
         <!-- Footer -->
