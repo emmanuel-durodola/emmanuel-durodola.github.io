@@ -1270,8 +1270,7 @@ button {
 			content: '';
 			display: block;
 			position: absolute;
-			top: calc(-3.5rem - 1px);
-			/*bottom: -1px; /* Place the line below the element */
+			bottom: calc(-3.5rem - 1px);
 			left: calc(50% - 1px);
 			width: 1px;
 			height: calc(3.5rem + 1px);
