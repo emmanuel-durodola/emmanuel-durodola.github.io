@@ -1421,7 +1421,7 @@ button {
 	@media screen and (max-width: 736px) {
 
 		#header > * {
-			margin-top: 2rem;
+			margin-top: 0; /*change from 2rem to 0*/
 		}
 
 			#header > *:before {
