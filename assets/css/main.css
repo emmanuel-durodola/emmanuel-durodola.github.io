@@ -1272,11 +1272,11 @@ button {
 		}
 
 	#header > :first-child {
-		margin-top: 0;
+		margin-top: -1px !important;
 	}
 
 		#header > :first-child:before {
-			display: block; /*change none to block -- i think this controls the bar*/
+			display: none; /*change none to block -- i think this controls the bar*/
 		}
 
 	#header .logo {
