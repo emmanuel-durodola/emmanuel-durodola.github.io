@@ -1699,7 +1699,7 @@ button {
 			}
 
 				#menu ul > li:first-child {
-					/*border-top: 0 !important;
+					border-top: 0 !important;
 					margin-top: 0 !important;
 					padding-top: 0 !important;*/
 					margin: 10px 0; /* Spacing between items */
@@ -1711,7 +1711,7 @@ button {
 					border: 0;
 					color: inherit;
 					/*display: block;*/
-					display: none;
+					display: block;
 					font-size: 0.8em;
 					letter-spacing: 0.225em;
 					outline: 0;
@@ -1755,7 +1755,7 @@ button {
 	}
 
 		body.is-menu-visible #page-wrapper:before {
-			display: none;
+			display: block;
 		}
 
 	body.is-menu-visible #menu {
