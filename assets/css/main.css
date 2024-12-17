@@ -1312,7 +1312,7 @@ button {
 			transition-delay: 0.25s;
 			padding: 1rem 2rem; /* change */
 			max-height: 40rem;
-			overflow: hidden;
+			overflow: visible;
 		}
 
 			#header .content .inner > :last-child {
@@ -1442,7 +1442,7 @@ button {
 			}
 
 		#header .content .inner {
-			padding: 3.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
+			padding: 2.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
 		}
 
 		#header .content p {
