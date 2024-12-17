@@ -1276,13 +1276,13 @@ button {
 	}
 
 		#header > :first-child:before {
-			display: none;
+			display: block; /*change none to block -- i think this controls the bar*/
 		}
 
 	#header .logo {
-		width: 5.5rem;
-		height: 5.5rem;
-		line-height: 5.5rem;
+		width: 2.5rem; /*change 5.5 to 2.5 */
+		height: 2.5rem; /*change 5.5 to 2.5 */
+		line-height: 2.5rem; /*change 5.5 to 2.5 */
 		border: solid 1px #ffffff;
 		border-radius: 100%;
 	}
@@ -1296,7 +1296,7 @@ button {
 		border-color: #ffffff;
 		/*border-top-width: 1px;
 		border-bottom-width: 1px;*/
-		border-top-width: 0;
+		border-top-width: 1px;
 		border-bottom-width: 1px;
 		max-width: 100%;
 	}
@@ -1310,13 +1310,13 @@ button {
 			-webkit-transition-delay: 0.25s;
 			-ms-transition-delay: 0.25s;
 			transition-delay: 0.25s;
-			padding: 1rem 2rem;
+			padding: 1rem 2rem; /* change */
 			max-height: 40rem;
 			overflow: hidden;
 		}
 
 			#header .content .inner > :last-child {
-				margin-bottom: 0;
+				margin-bottom: 1;
 			}
 
 		#header .content p {
@@ -1330,7 +1330,7 @@ button {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: flex;
+		display: block;/* change*/
 		margin-bottom: 0;
 		list-style: none;
 		padding-left: 0;
@@ -1370,10 +1370,10 @@ button {
 	#header nav.use-middle:after {
 		content: '';
 		display: none;
-		/*position: absolute;
+		position: absolute;
 		top: calc(-3.5rem - 1px);
 		left: calc(50% - 1px);
-		width: 1px;
+		width: 0;
 		height: calc(3.5rem + 1px);
 		background: #ffffff;*/
 	}
@@ -1423,7 +1423,7 @@ button {
 	@media screen and (max-width: 736px) {
 
 		#header > * {
-			margin-top: 2rem;
+			margin-top: 1rem;
 		}
 
 			#header > *:before {
