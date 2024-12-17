@@ -8,35 +8,28 @@
     <style>
         /* Full-width mini pages */
         .mini-page {
-            margin: 0; /* Remove margin */
+            margin: 0; /* Remove margins */
             width: 100vw; /* Full viewport width */
-            height: 100vh; /* Full viewport height */
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            position: relative;
+            display: flex; /* Flex layout for image and content */
+            align-items: center; /* Vertically align content */
+            position: relative; /* Stay above background */
             z-index: 10;
-            overflow: hidden; /* Prevent scrollbars */
-            background-color: rgba(27, 31, 34, 0.95); /* Dark transparent background */
+            background-color: rgba(27, 31, 34, 0.95); /* Dark semi-transparent background */
         }
         
-        /* Alternate layout for even mini pages */
-        .mini-page:nth-child(even) {
-            flex-direction: row-reverse; /* Reverse layout */
-        }
-        
-        /* Images span the height of the mini page */
+        /* Images bordering the mini pages */
         .mini-page img {
-            width: 50%; /* Half of the page width */
-            height: 100%; /* Full height */
-            object-fit: cover; /* Ensures the image covers its container */
+            width: 25%; /* Image takes 25% of the screen width */
+            height: auto; /* Adjust height based on content */
+            object-fit: cover; /* Ensure the image covers its container */
+            flex-shrink: 0; /* Prevent the image from shrinking */
         }
         
-        /* Text content fills remaining space */
+        /* Mini-page text content */
         .mini-page-content {
-            flex: 1;
-            padding: 4rem; /* Add space around the text */
-            color: #fff; /* White text color */
+            flex: 1; /* Let content fill the remaining space */
+            padding: 2rem; /* Space inside the text section */
+            color: #fff; /* White text */
             text-align: left;
         }
         
@@ -50,7 +43,7 @@
         .mini-page-content p {
             font-size: 1.1rem;
             line-height: 1.6;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
         }
         
         .mini-page-content a {
@@ -59,8 +52,14 @@
         }
         
         .mini-page-content a:hover {
-            color: #ccc; /* Lighten the link color on hover */
+            color: #ccc; /* Lighten link color on hover */
         }
+        
+        /* Alternating image position for even mini pages */
+        .mini-page:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
 
         /* Remove top border and keep only bottom border in header */
         #header .content {
