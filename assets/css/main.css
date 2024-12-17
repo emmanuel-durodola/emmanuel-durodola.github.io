@@ -1261,14 +1261,14 @@ button {
 
 		#header > *:before {
 			content: '';
-			display: none;
-			/*position: absolute;*/
-			/*position: fixed;
+			display: block;
+			position: absolute;
+			/*position: fixed;*/
 			top: calc(-3.5rem - 1px);
 			left: calc(50% - 1px);
 			width: 1px;
 			height: calc(3.5rem + 1px);
-			background: #ffffff;*/
+			background: #ffffff;
 		}
 
 	#header > :first-child {
@@ -1310,7 +1310,7 @@ button {
 			-webkit-transition-delay: 0.25s;
 			-ms-transition-delay: 0.25s;
 			transition-delay: 0.25s;
-			padding: 3rem 2rem;
+			padding: 1rem 2rem;
 			max-height: 40rem;
 			overflow: hidden;
 		}
@@ -1369,13 +1369,13 @@ button {
 
 	#header nav.use-middle:after {
 		content: '';
-		display: block;
-		position: absolute;
+		display: none;
+		/*position: absolute;
 		top: calc(-3.5rem - 1px);
 		left: calc(50% - 1px);
 		width: 1px;
 		height: calc(3.5rem + 1px);
-		background: #ffffff;
+		background: #ffffff;*/
 	}
 
 	#header nav.use-middle ul li.is-middle {
