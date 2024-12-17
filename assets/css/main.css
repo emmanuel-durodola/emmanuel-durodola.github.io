@@ -1676,6 +1676,12 @@ button {
 		width: 20em;
 		z-index: 1000;
 	}
+#menu .menuToggle {
+    position: absolute;
+    top: 10px; /* Adjust the vertical position */
+    right: 10px; /* Align to the right */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
 
 		#menu ul {
 			list-style: none;
