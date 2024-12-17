@@ -1256,7 +1256,7 @@ button {
 		-ms-transition: opacity 0.325s ease-in-out;
 		transition: opacity 0.325s ease-in-out;
 		position: relative;
-		margin-top: 3.5rem;
+		margin-top: 1.5rem;/*change from 3.5 to 1.5rem */
 	}
 
 		#header > *:before {
@@ -1421,7 +1421,7 @@ button {
 	@media screen and (max-width: 736px) {
 
 		#header > * {
-			margin-top: 0; /*change from 2rem to 0*/
+			margin-top: 2rem; /*change from 2rem to 0*/
 		}
 
 			#header > *:before {
