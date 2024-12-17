@@ -6,64 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <style>
-        /* Full-width mini pages with float effect */
+        /* Full-width mini pages */
         .mini-page {
-            padding: 0; /* Remove padding */
-            margin: 0; /* Remove gaps */
-            width: 100%; /* Full width */
-            background-color: rgba(27, 31, 34, 0.95); /* Slightly transparent background */
-            color: #fff; /* White text */
+            margin: 0; /* Remove margin */
+            width: 100vw; /* Full viewport width */
+            height: 100vh; /* Full viewport height */
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 0; /* Remove gap between content and image */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Floating effect */
-            position: relative;
-            z-index: 10; /* Float above background */
-            height: 100vh; /* Make each mini page full height */
-        }
-
-        .mini-page:nth-child(even) {
-            flex-direction: row-reverse;
-        }
-
-        /* Images within mini pages */
-        .mini-page img {
-            width: 50%; /* Image takes half the page */
-            height: 100%; /* Image is full height */
-            object-fit: cover; /* Ensure the image covers the container */
-        }
-
-        .mini-page-content {
-            flex: 1; /* Expand content */
-            text-align: left;
-            padding: 2rem; /* Add padding to the text content */
-        }
-
-        /* Contact section on the main page */
-        #contact {
-            padding: 4rem 2rem;
-            background-color: rgba(27, 31, 34, 0.95);
-            color: #fff;
-            text-align: center;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
             position: relative;
             z-index: 10;
+            overflow: hidden; /* Prevent scrollbars */
+            background-color: rgba(27, 31, 34, 0.95); /* Dark transparent background */
         }
-
-        #contact h2 {
+        
+        /* Alternate layout for even mini pages */
+        .mini-page:nth-child(even) {
+            flex-direction: row-reverse; /* Reverse layout */
+        }
+        
+        /* Images span the height of the mini page */
+        .mini-page img {
+            width: 50%; /* Half of the page width */
+            height: 100%; /* Full height */
+            object-fit: cover; /* Ensures the image covers its container */
+        }
+        
+        /* Text content fills remaining space */
+        .mini-page-content {
+            flex: 1;
+            padding: 4rem; /* Add space around the text */
+            color: #fff; /* White text color */
+            text-align: left;
+        }
+        
+        .mini-page-content h2 {
             font-size: 2rem;
             margin-bottom: 1rem;
-            border-bottom: 2px solid #444;
-            display: inline-block;
+            border-bottom: 2px solid #444; /* Subtle underline for headings */
             padding-bottom: 0.5rem;
         }
-
-        #contact p {
+        
+        .mini-page-content p {
             font-size: 1.1rem;
             line-height: 1.6;
             margin-bottom: 1.5rem;
         }
+        
+        .mini-page-content a {
+            color: #f0f0f0;
+            text-decoration: underline;
+        }
+        
+        .mini-page-content a:hover {
+            color: #ccc; /* Lighten the link color on hover */
+        }
+
         /* Remove top border and keep only bottom border in header */
         #header .content {
             border-top: none; /* Remove the top bar */
