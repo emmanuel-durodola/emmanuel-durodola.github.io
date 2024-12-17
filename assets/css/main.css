@@ -1309,11 +1309,11 @@ button {
 			transition-delay: 0.25s;
 			padding: 3rem 2rem;
 			max-height: 40rem;
-			overflow: hidden;
+			overflow: visible;
 		}
 
 			#header .content .inner > :last-child {
-				margin-bottom: 2rem;
+				margin-bottom: 4rem;
 			}
 
 		#header .content p {
