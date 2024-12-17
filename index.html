@@ -248,37 +248,39 @@
 			
 		<!-- Add this script at the end of the body -->
 		<script>
-		    document.addEventListener('DOMContentLoaded', function () {
-		        console.log("Script loaded and DOM ready"); // Debugging step
-		
-		        const menuToggle = document.getElementById('menu-toggle');
-		        const dropdownMenu = document.getElementById('dropdown-menu');
-		
-		        if (menuToggle && dropdownMenu) {
-		            console.log("Menu button and dropdown found"); // Confirm elements exist
-		
-		            // Toggle dropdown menu visibility
-		            menuToggle.addEventListener('click', function (e) {
-		                console.log('Menu button clicked'); // Log the event
-		                e.stopPropagation();
-		                dropdownMenu.classList.toggle('hidden');
-		            });
-		
-		            // Close the dropdown menu when clicking outside
-		            document.addEventListener('click', function () {
-		                if (!dropdownMenu.classList.contains('hidden')) {
-		                    dropdownMenu.classList.add('hidden');
-		                }
-		            });
-		
-		            // Prevent menu from closing when clicking inside it
-		            dropdownMenu.addEventListener('click', function (e) {
-		                e.stopPropagation();
-		            });
-		        } else {
-		            console.error("Menu button or dropdown menu not found in the DOM");
-		        }
-		    });
+    document.addEventListener('DOMContentLoaded', function () {
+        const menuToggle = document.getElementById('menu-toggle');
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        // Check if the elements exist
+        if (menuToggle && dropdownMenu) {
+            console.log("Menu button and dropdown menu found");
+
+            // Toggle the 'hidden' class when the button is clicked
+            menuToggle.addEventListener('click', function (e) {
+                e.stopPropagation(); // Prevent event from bubbling up
+                dropdownMenu.classList.toggle('hidden');
+                
+                // Log the updated class list for debugging
+                console.log("Dropdown menu classes:", dropdownMenu.className);
+            });
+
+            // Close the dropdown menu when clicking outside
+            document.addEventListener('click', function () {
+                if (!dropdownMenu.classList.contains('hidden')) {
+                    dropdownMenu.classList.add('hidden');
+                    console.log("Dropdown menu hidden after clicking outside");
+                }
+            });
+
+            // Prevent clicks inside the dropdown menu from closing it
+            dropdownMenu.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        } else {
+            console.error("Menu button or dropdown menu not found in the DOM");
+        }
+    });
 </script>
 
 </body>
