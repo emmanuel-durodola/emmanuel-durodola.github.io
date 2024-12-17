@@ -321,10 +321,10 @@ form {
 	}
 
 	form > .fields {
-		display: -moz-flex;
+		display: -moz-block;
 		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
+		display: -ms-block;
+		display: block;
 		-moz-flex-wrap: wrap;
 		-webkit-flex-wrap: wrap;
 		-ms-flex-wrap: wrap;
@@ -1506,7 +1506,7 @@ button {
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
-	display: flex;
+	display: block;
 	-moz-align-items: center;
 	-webkit-align-items: center;
 	-ms-align-items: center;
