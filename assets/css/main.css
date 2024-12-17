@@ -1256,7 +1256,7 @@ button {
 		-ms-transition: opacity 0.325s ease-in-out;
 		transition: opacity 0.325s ease-in-out;
 		position: relative;
-		margin-top: 1.5rem;/*change from 3.5 to 1.5rem */
+		margin-top: 3.5rem;/*change from 3.5 to 1.5rem */
 	}
 
 		#header > *:before {
