@@ -1673,11 +1673,19 @@ button {
     font-size: 1.5rem;
     color: #ffffff; /* Match your theme */
 }
+.nav-section {
+    border: none; /* Remove any border */
+    position: relative; /* Ensure pseudo-elements don't affect layout */
+}
 
 .nav-section p {
     font-size: 1rem;
     margin-bottom: 1rem;
     color: #cccccc; /* Subtle text color */
+}
+.nav-section:before,
+.nav-section:after {
+    content: none; /* Disable any pseudo-elements */
 }
 
 .nav-section a.button {
