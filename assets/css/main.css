@@ -1269,7 +1269,6 @@ button {
 			width: 1px;
 			height: calc(3.5rem + 1px);
 			background: #ffffff;
-			pointer-events: none;
 		}
 
 	#header > :first-child {
@@ -1377,7 +1376,6 @@ button {
 		width: 1px;
 		height: calc(3.5rem + 1px);
 		background: #ffffff;
-		pointer-events: none;
 	}
 
 	#header nav.use-middle ul li.is-middle {
@@ -1425,12 +1423,12 @@ button {
 	@media screen and (max-width: 736px) {
 
 		#header > * {
-			margin-top: 1rem;
+			margin-top: rem;
 		}
 
 			#header > *:before {
 				top: calc(-2rem - 1px);
-				height: calc(2rem + 1px);
+				/*height: calc(2rem + 1px);*/
 			}
 
 		#header .logo {
@@ -1444,7 +1442,7 @@ button {
 			}
 
 		#header .content .inner {
-			padding: 0.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
+			padding: 3.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
 		}
 
 		#header .content p {
