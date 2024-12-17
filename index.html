@@ -10,70 +10,8 @@
 		for the web browser when loading the page	
 	-->
 	<head>
-		<style>
-    /* Basic Styles */
-    body {
-        font-family: Arial, sans-serif;
-        background-color: #222;
-        color: #fff;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* Menu Button */
-    #menu-button {
-        position: fixed;
-        top: 1rem;
-        right: 1rem;
-        z-index: 1000;
-    }
-
-    #menu-button button {
-        background: none;
-        border: none;
-        color: #fff;
-        font-size: 1.5rem;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        gap: 0.5rem;
-    }
-
-    /* Dropdown Menu */
-    #dropdown-menu {
-        position: absolute;
-        top: 3rem;
-        right: 1rem;
-        background-color: rgba(27, 31, 34, 0.95);
-        padding: 1rem;
-        border-radius: 4px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        display: none; /* Initially hidden */
-    }
-
-    #dropdown-menu ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-    }
-
-    #dropdown-menu ul li {
-        margin: 0.5rem 0;
-    }
-
-    #dropdown-menu ul li a {
-        color: #fff;
-        text-decoration: none;
-    }
-
-    /* Utility Class */
-    .hidden {
-        display: none !important;
-    }
-</style>
-
 		<!-- This is the title of the page. It is the text that appears inside this pages tab in your web browser -->
-		<title>Emmanuel Durodola</title>
+		<title>AstroSites</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!-- 	This links to this page's CSS, which is contained in the folder assets/css and the file main.css.
@@ -91,25 +29,10 @@
 	</head>
 	<!-- The body is the location where your site's content will go -->
 	<body class="is-preload">
-		
 
 			<!-- This "div" wraps around all of our content and just changes how things are layed out -->
 			<div id="wrapper">
-				<!-- Navigation menu -->
-				<!-- Menu Button -->
-				<div id="menu-button">
-				    <button id="menu-toggle">Menu ☰</button>
-				</div>
-				
-				<!-- Dropdown Menu -->
-				<nav id="dropdown-menu" class="hidden">
-					<ul> 
-						<li><a href="#about">About</a></li>
-		            			<li><a href="#research">Research</a></li>
-		            			<li><a href="#community">Community</a></li>
-		            			<li><a href="#contact">Contact</a></li>
-					</ul>
-				</nav>
+
 					<!-- This is where the content that appears on page load exists -->
 					<header id="header">
 						<!-- This is the main content of the front page -->
@@ -117,7 +40,7 @@
 							<div class="inner">
 								<!-- Here is a heading where you can put your name -->
 								<h1>
-									Emmanuel Durodola
+									First Last
 								</h1>
 								<!-- 	Here is an image where you can put a picture of you. 
 									You can change the width and height attributes below to change how large
@@ -125,12 +48,12 @@
 
 									Try adding "border-radius: 50%;" to the style attribute.
 								-->
-								<img src="images/iceland.jpg" style="width:280px; height:280px; object-fit: cover;">
+								<img src="images/Astronomy.jpg" style="width:280px; height:280px; object-fit: cover;">
 								<!-- 	Here is a paragraph where you can put your position and institution, or
 									a short line about yourself.
 								-->
 								<p>
-									Astronomy Graduate Student  <br>  Dartmouth College
+									Position <br> Institution
 								</p>
 								<!-- Here is a paragraph where you can put a link to your CV -->
 								<p>
@@ -307,39 +230,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-			
-		<!-- Add this script at the end of the body -->
-		<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const menuToggle = document.getElementById('menu-toggle');
-        const dropdownMenu = document.getElementById('dropdown-menu');
-
-        // Toggle the 'hidden' class
-        menuToggle.addEventListener('click', function (e) {
-            e.stopPropagation();
-            dropdownMenu.classList.toggle('hidden');
-            console.log('Menu button clicked. Dropdown classes:', dropdownMenu.className);
-        });
-
-        // Close the dropdown when clicking outside
-        document.addEventListener('click', function () {
-            if (!dropdownMenu.classList.contains('hidden')) {
-                dropdownMenu.classList.add('hidden');
-                console.log('Dropdown menu hidden.');
-            }
-        });
-
-        // Prevent clicks inside the dropdown from closing it
-        dropdownMenu.addEventListener('click', function (e) {
-            e.stopPropagation();
-        });
-    });
-</script>
-
-
-</body>
-
-			
 
 	</body>
 </html>
