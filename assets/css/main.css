@@ -1750,4 +1750,10 @@ button {
 		-ms-transform: translateX(0);
 		transform: translateX(0);
 	}
-	
+	/* Remove unwanted top bar from the header */
+#header .content {
+    border-top: none;
+    border-bottom: solid 3px #444; /* Optional bottom border */
+    padding-bottom: 1rem;
+}
+
