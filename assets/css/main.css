@@ -1699,22 +1699,22 @@ button {
 
 /* Hide mobile navigation on larger screens */
 .mobile-nav {
-    display: none;
+    display: none !important;
 }
 
 /* Show detailed navigation on larger screens */
 .large-nav {
-    display: block;
+    display: block !important;
 }
 
 /* Media query for mobile screens */
 @media screen and (max-width: 768px) {
     .mobile-nav {
-        display: block; /* Show the simple menu */
+        display: block !important; /* Show the simple menu */
     }
 
     .large-nav {
-        display: none; /* Hide the detailed navigation */
+        display: none !important; /* Hide the detailed navigation */
     }
 
     #nav-simple ul {
