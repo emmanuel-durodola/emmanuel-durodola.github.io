@@ -1647,68 +1647,57 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
+/* Menu Container */
+.menu-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Makes sure it stays on top */
+}
+
 /* Menu Button */
-#menu-button {
-    position: fixed;
-    top: 1rem;
-    right: 1rem;
-    z-index: 1000;
-}
-
-#menu-button button {
-    background-color: rgba(27, 31, 34, 0.9); /* Semi-transparent background */
-    color: #ffffff; /* White text */
+.menu-button {
+    font-size: 28px; /* Size of the ☰ symbol */
+    background: none;
     border: none;
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
+    color: #fff; /* White color */
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    outline: none;
 }
 
-#menu-button button:hover {
-    background-color: rgba(27, 31, 34, 0.7); /* Darker background on hover */
-}
-
-/* Dropdown Menu */
-#dropdown-menu {
-    position: fixed;
-    top: 4rem; /* Adjust based on the button height */
-    right: 1rem;
-    background-color: rgba(27, 31, 34, 0.9);
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 999; /* Ensure it's above other elements */
-    padding: 1rem;
-    display: none; /* Initially hidden */
-}
-
-#dropdown-menu ul {
+/* Dropdown Menu Styling */
+.menu {
     list-style: none;
     margin: 0;
     padding: 0;
+    position: absolute;
+    top: 40px; /* Appears below the ☰ button */
+    right: 0;
+    background-color: #333; /* Background color for the dropdown */
+    color: #fff;
+    border-radius: 4px;
+    display: none; /* Hidden by default */
 }
 
-#dropdown-menu ul li {
-    margin: 0.5rem 0;
+.menu li {
+    padding: 10px 20px;
 }
 
-#dropdown-menu ul li a {
-    color: #ffffff;
+.menu li a {
+    color: #fff; /* Text color */
     text-decoration: none;
-    font-size: 1rem;
-    padding: 0.5rem 1rem;
     display: block;
-    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-#dropdown-menu ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #ffdd57;
+.menu li a:hover {
+    background-color: #444; /* Darker background on hover */
 }
 
-/* Utility Classes */
-.hidden {
+/* Toggle Classes */
+.menu.hidden {
     display: none;
 }
 
+.menu.show {
+    display: block;
+}
