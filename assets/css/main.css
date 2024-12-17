@@ -1270,7 +1270,7 @@ button {
 			content: '';
 			display: block;
 			position: absolute;
-			bottom: calc(-3.5rem - 1px);
+			bottom: calc(-1.5rem - 1px);
 			left: calc(50% - 1px);
 			width: 1px;
 			height: calc(3.5rem + 1px);
