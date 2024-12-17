@@ -243,6 +243,18 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script>
+			    // Get the menu button and menu
+			    const menuButton = document.getElementById('menu-button');
+			    const menu = document.getElementById('menu');
+			
+			    // Toggle visibility when the button is clicked
+			    menuButton.addEventListener('click', () => {
+			        menu.classList.toggle('show'); // Show/Hide menu
+			        menu.classList.toggle('hidden'); // Toggle hidden class
+			    });
+			</script>
+
 
 	</body>
 </html>
