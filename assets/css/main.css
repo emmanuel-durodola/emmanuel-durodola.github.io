@@ -1191,7 +1191,6 @@ button {
 	min-height: 100vh;
 	width: 100%;
 	padding: 4rem 2rem;
-	padding-top: 5rem; /* Added line to prevent overlap */
 	z-index: 3;
 }
 
@@ -1412,9 +1411,9 @@ button {
 
 	@media screen and (max-width: 980px) {
 
-		/*#header .content p br {
+		#header .content p br {
 			display: none;
-		} */
+		}
 
 	}
 
@@ -1648,104 +1647,3 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
-/* Navigation Menu */
-#top-nav {
-    position: fixed; /* Sticks the menu to the top of the viewport */
-    top: 0;
-    left: 0;
-    width: 100%; /* Spans the full width */
-    background-color: rgba(27, 31, 34, 0.9); /* Semi-transparent background */
-    z-index: 1000; /* Ensures it stays above other elements */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
-}
-
-#top-nav ul {
-    display: flex; /* Aligns items horizontally */
-    justify-content: center; /* Centers the menu items */
-    list-style: none; /* Removes default bullets */
-    margin: 0;
-    padding: 0;
-}
-
-#top-nav ul li {
-    margin: 0 1rem; /* Spacing between menu items */
-}
-
-#top-nav ul li a {
-    color: #ffffff; /* White text for links */
-    text-decoration: none; /* Removes underline */
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0.75rem 1rem; /* Adds spacing inside menu items */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth hover effect */
-}
-
-#top-nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1); /* Highlight on hover */
-    color: #ffdd57; /* Accent color for hover */
-}
-/* Menu Button */
-#menu-button {
-    position: fixed;
-    top: 1rem; /* Adjust distance from the top */
-    right: 1rem; /* Adjust distance from the right */
-    z-index: 1000;
-    padding: 0; /* Remove extra padding */
-}
-
-#menu-button button {
-    background: none !important; /* No background */
-    border: none !important; /* No border */
-    outline: none !important; /* Remove focus outline */
-    box-shadow: none !important; /* Remove any shadow */
-    color: #ffffff; /* White text and icon */
-    font-size: 1.5rem; /* Adjust size of the icon and text */
-    cursor: pointer;
-    display: flex; /* Align icon and text in a row */
-    align-items: center; /* Vertically center align */
-    gap: 0.5rem; /* Add spacing between the icon and text */
-    transition: color 0.3s ease; /* Smooth hover effect */
-}
-
-
-#menu-button button:hover {
-    color: #ffdd57; /* Accent color on hover */
-}
-/* Dropdown Menu */
-#dropdown-menu {
-    position: absolute;
-    top: 3rem; /* Adjust based on the button height */
-    right: 0;
-    background-color: rgba(27, 31, 34, 0.95); /* Dark semi-transparent background */
-    border-radius: 4px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 999;
-    padding: 0.5rem 1rem; /* Adjust spacing */
-    /* display: none;  Hidden by default */
-}
-
-#dropdown-menu ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-#dropdown-menu ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    display: block;
-    padding: 0.5rem 0;
-    transition: color 0.3s ease, background 0.3s ease;
-}
-
-#dropdown-menu ul li a:hover {
-    color: #ffdd57;
-    background-color: rgba(255, 255, 255, 0.1);
-}
-
-/* Utility Classes */
-.hidden {
-    display: none !important;
-}
-
