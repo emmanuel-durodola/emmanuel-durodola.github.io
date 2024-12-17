@@ -1310,7 +1310,7 @@ button {
 			-webkit-transition-delay: 0.25s;
 			-ms-transition-delay: 0.25s;
 			transition-delay: 0.25s;
-			padding: 1rem 2rem; /* change */
+			padding: 1rem 2rem; /* change 3 to 1 to bring out the cv button*/
 			max-height: 40rem;
 			overflow: visible;
 		}
@@ -1327,20 +1327,29 @@ button {
 		}
 
 	#header nav ul {
-		display: -moz-flex;
+		/*display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
-		display: block;/* change*/
+		display: block;/* change
 		margin-bottom: 0;
 		list-style: none;
 		padding-left: 0;
 		border: solid 1px #ffffff;
-		border-radius: 4px;
+		border-radius: 4px;*/
+		    display: block;
+		    margin-bottom: 0;
+		    list-style: none;
+		    padding-left: 0;
+		    border: solid 1px #ffffff;
+		    border-radius: 4px;
+		
 	}
 
 		#header nav ul li {
 			padding-left: 0;
 			border-left: solid 1px #ffffff;
+			display: block; /* Ensure items are stacked vertically */
+    			margin: 0; /* Optional margin adjustments */
 		}
 
 			#header nav ul li:first-child {
@@ -1445,6 +1454,7 @@ button {
 
 		#header .content .inner {
 			padding: 0.5rem 1rem; /* change from 2.5 to 0.5  hopefully shows the buttons*/
+			margin-bottom: 2.5rem; /* Add space below navigation */
 		}
 
 		#header .content p {
@@ -1470,7 +1480,7 @@ button {
 				flex-direction: column;
 				min-width: 10rem;
 				max-width: 100%;
-				margin-bottom: 2.5rem; /* Add space below navigation */
+				 
 			}
 
 				#header nav ul li {
