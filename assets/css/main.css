@@ -1272,9 +1272,9 @@ button {
 			position: absolute;
 			/*top: calc(-5.5rem - 1px);*/
 			bottom: -1px;
-			left: calc(50% - 1px);
+			left: 50%;
 			width: 1px;
-			height: calc(3.5rem + 1px);
+			height: 50px;
 			background: #ffffff;
 			top: auto;
 		}
@@ -1713,7 +1713,7 @@ button {
 					border: 0;
 					color: inherit;
 					/*display: block;*/
-					display: block;
+					display: none;
 					font-size: 0.8em;
 					letter-spacing: 0.225em;
 					outline: 0;
@@ -1735,7 +1735,7 @@ button {
 			background-repeat: no-repeat;
 			border: 0;
 			cursor: pointer;
-			display: block;
+			display: none;
 			height: 3em;
 			position: absolute;
 			right: 0;
@@ -1757,7 +1757,7 @@ button {
 	}
 
 		body.is-menu-visible #page-wrapper:before {
-			display: block;
+			display: none;
 		}
 
 	body.is-menu-visible #menu {
