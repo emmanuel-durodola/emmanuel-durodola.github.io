@@ -1647,3 +1647,76 @@ button {
 	body.is-preload #footer {
 		opacity: 0;
 	}
+#nav-sections {
+    display: flex; /* Arrange items side by side */
+    flex-direction: column; /* Stack items vertically */
+    gap: 2rem; /* Add spacing between sections */
+    text-align: center; /* Center-align content */
+    padding: 2rem;
+}
+
+#nav-sections ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.nav-section {
+    background: rgba(255, 255, 255, 0.1); /* Subtle background color */
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.nav-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff; /* Match your theme */
+}
+
+.nav-section p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #cccccc; /* Subtle text color */
+}
+
+.nav-section a.button {
+    display: inline-block;
+    background: #21b2a6; /* Button background color */
+    color: #ffffff; /* Button text color */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+}
+
+.nav-section a.button:hover {
+    background: #1a8d83; /* Darker shade on hover */
+}
+@media screen and (max-width: 768px) {
+    #nav-sections {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .nav-section {
+        padding: 1rem;
+    }
+
+    .nav-section h3 {
+        font-size: 1.25rem;
+    }
+
+    .nav-section p {
+        font-size: 0.9rem;
+    }
+
+    .nav-section a.button {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
