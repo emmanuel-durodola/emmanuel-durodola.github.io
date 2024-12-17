@@ -33,9 +33,11 @@
             flex: 1;
         }
 
-        /* Remove solid borders */
-        .section-break {
-            display: none;
+        /* Remove borders and spacing from section breaks */
+        hr, .section-break {
+            display: none; /* Completely hide */
+            border: none; /* Remove any borders */
+            margin: 0; /* Remove any spacing */
         }
 
         /* Header border styling */
