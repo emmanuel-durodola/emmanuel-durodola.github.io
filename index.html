@@ -8,7 +8,7 @@
     <style>
         /* Full-width mini pages with float effect */
         .mini-page {
-            padding: 3rem 2rem; /* Increase padding */
+            padding: 0; /* Remove padding */
             margin: 0; /* Remove gaps */
             width: 100%; /* Full width */
             background-color: rgba(27, 31, 34, 0.95); /* Slightly transparent background */
@@ -16,10 +16,11 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            gap: 2rem; /* Spacing between image and text */
+            gap: 0; /* Remove gap between content and image */
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Floating effect */
             position: relative;
             z-index: 10; /* Float above background */
+            height: 100vh; /* Make each mini page full height */
         }
 
         .mini-page:nth-child(even) {
@@ -28,16 +29,15 @@
 
         /* Images within mini pages */
         .mini-page img {
-            width: 250px;
-            height: auto;
-            object-fit: cover;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Add shadow */
+            width: 50%; /* Image takes half the page */
+            height: 100%; /* Image is full height */
+            object-fit: cover; /* Ensure the image covers the container */
         }
 
         .mini-page-content {
             flex: 1; /* Expand content */
             text-align: left;
+            padding: 2rem; /* Add padding to the text content */
         }
 
         /* Contact section on the main page */
@@ -70,6 +70,7 @@
             border-bottom: 3px solid #444; /* Add bottom border */
             padding-bottom: 1rem; /* Add space below the content */
         }
+
     </style>
 </head>
 <body class="is-preload">
