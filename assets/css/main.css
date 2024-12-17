@@ -1696,27 +1696,47 @@ button {
 .nav-section a.button:hover {
     background: #1a8d83; /* Darker shade on hover */
 }
+
+/* Hide mobile navigation on larger screens */
+.mobile-nav {
+    display: none;
+}
+
+/* Show detailed navigation on larger screens */
+.large-nav {
+    display: block;
+}
+
+/* Media query for mobile screens */
 @media screen and (max-width: 768px) {
-    #nav-sections {
-        gap: 1rem;
-        padding: 1rem;
+    .mobile-nav {
+        display: block; /* Show the simple menu */
     }
 
-    .nav-section {
-        padding: 1rem;
+    .large-nav {
+        display: none; /* Hide the detailed navigation */
     }
 
-    .nav-section h3 {
-        font-size: 1.25rem;
+    #nav-simple ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
     }
 
-    .nav-section p {
-        font-size: 0.9rem;
+    #nav-simple ul li {
+        margin: 1rem 0;
     }
 
-    .nav-section a.button {
-        font-size: 0.8rem;
-        padding: 0.4rem 0.8rem;
+    #nav-simple ul li a {
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    #nav-simple ul li a:hover {
+        color: #21b2a6; /* Add hover effect */
     }
 }
-/*h*/
