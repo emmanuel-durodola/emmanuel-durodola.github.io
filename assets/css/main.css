@@ -1721,7 +1721,7 @@ button {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     z-index: 999;
     padding: 0.5rem 1rem; /* Adjust spacing */
-    display: none; /* Hidden by default */
+    /* display: none;  Hidden by default */
 }
 
 #dropdown-menu ul {
