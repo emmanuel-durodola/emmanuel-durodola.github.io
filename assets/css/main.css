@@ -1657,13 +1657,14 @@ button {
 
 /* Menu Button */
 .menu-button {
-    font-size: 15px; /* Size of the ☰ symbol */
-    background: none;
-    border: none;
-    color: #fff; /* White color */
+    font-size: 20px !important; /* Set a consistent size */
+    background: none; /* No background */
+    border: none !important; /* Remove borders */
+    color: #fff; /* White ☰ symbol */
     cursor: pointer;
-    outline: none;
-	box-shadow: none; /* Ensures no shadow or border */
+    outline: none !important; /* Remove focus outline */
+    box-shadow: none !important; /* Remove box shadow */
+    padding: 5px; /* Optional padding */
 }
 
 /* Dropdown Menu Styling */
@@ -1707,15 +1708,4 @@ button {
     outline: none; /* Remove default */
     border-bottom: 2px solid #f0f0f0; /* Custom focus indicator */
 }
-/* Responsive Fix: Adjust for Small and Large Screens */
-@media (min-width: 768px) { /* For larger screens */
-    .menu-button {
-        font-size: 20px; /* Keeps button small on desktop */
-    }
-}
 
-@media (max-width: 767px) { /* For mobile screens */
-    .menu-button {
-        font-size: 20px; /* Keeps size consistent on mobile */
-    }
-}
