@@ -1413,7 +1413,7 @@ button {
 	@media screen and (max-width: 980px) {
 
 		#header .content p br {
-			display: none;
+			display: inline;
 		}
 
 	}
@@ -1441,6 +1441,7 @@ button {
 
 		#header .content .inner {
 			padding: 2.5rem 1rem;
+			margin-bottom: 2.5rem;
 		}
 
 		#header .content p {
