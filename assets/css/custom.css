@@ -1,0 +1,125 @@
+/* ============================================================
+   custom.css — visual enhancements
+   To revert any page: remove <link rel="stylesheet" href="assets/css/custom.css" />
+   ============================================================ */
+
+/* --- Accent color: deep space blue, replacing orange-red --- */
+
+input[type="submit"].primary,
+input[type="reset"].primary,
+input[type="button"].primary,
+button.primary,
+.button.primary {
+	background-color: #4361ee;
+	box-shadow: 0 4px 15px rgba(67, 97, 238, 0.35);
+}
+
+input[type="submit"].primary:hover,
+input[type="reset"].primary:hover,
+input[type="button"].primary:hover,
+button.primary:hover,
+.button.primary:hover {
+	background-color: #5a78f5;
+	box-shadow: 0 6px 20px rgba(67, 97, 238, 0.5);
+}
+
+input[type="submit"].primary:active,
+input[type="reset"].primary:active,
+input[type="button"].primary:active,
+button.primary:active,
+.button.primary:active {
+	background-color: #3451d1;
+}
+
+/* --- Banner: deep navy-purple gradient overlay + heading glow --- */
+
+#banner {
+	background-image:
+		linear-gradient(135deg, rgba(10, 8, 40, 0.72) 0%, rgba(30, 20, 80, 0.55) 60%, rgba(67, 97, 238, 0.2) 100%),
+		url("images/background.png");
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+}
+
+#banner h2 {
+	text-shadow: 0 0 40px rgba(120, 150, 255, 0.55), 0 2px 4px rgba(0, 0, 0, 0.4);
+	letter-spacing: 0.06em;
+}
+
+#banner p {
+	letter-spacing: 0.04em;
+	opacity: 0.92;
+}
+
+/* --- Page headers (research, about, community) --- */
+
+#main > header {
+	background-image:
+		linear-gradient(135deg, rgba(10, 8, 50, 0.75) 0%, rgba(30, 20, 80, 0.6) 60%, rgba(67, 97, 238, 0.18) 100%),
+		url("images/background.png");
+}
+
+/* --- Nav: accent on hover --- */
+
+#nav a:hover,
+#nav a:active {
+	color: #8fa8ff !important;
+}
+
+/* --- Spotlight section heading links --- */
+
+.wrapper.alt .spotlight .content h2 a:hover {
+	color: #8fa8ff;
+	border-bottom-color: rgba(143, 168, 255, 0.3);
+}
+
+/* --- Panel cards: gradient + glow shadow + lift on hover --- */
+
+.panel {
+	background: linear-gradient(150deg, #ffffff 0%, #f2f5ff 100%);
+	box-shadow: 0 4px 20px rgba(67, 97, 238, 0.1);
+	border: 1px solid rgba(67, 97, 238, 0.18);
+	transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.panel:hover {
+	background: linear-gradient(150deg, #eef1ff 0%, #e2e8ff 100%);
+	box-shadow: 0 10px 36px rgba(67, 97, 238, 0.25);
+	transform: translateY(-5px);
+}
+
+.panel h2 {
+	color: #2a3a8a;
+}
+
+/* --- Unpublished projects: accent underline on section heading --- */
+
+.inner h3 u {
+	text-decoration-color: #4361ee;
+	text-decoration-thickness: 2px;
+}
+
+/* --- Community feature icons: accent color --- */
+
+.features li::before {
+	color: #4361ee !important;
+}
+
+/* --- Section headings: tighter letter-spacing --- */
+
+h2, h3 {
+	letter-spacing: 0.025em;
+}
+
+/* --- Footer: subtle accent top border --- */
+
+#footer {
+	border-top: 2px solid rgba(67, 97, 238, 0.25);
+}
+
+/* --- Icon links in footer: accent on hover --- */
+
+#footer .icons a:hover {
+	color: #8fa8ff;
+}

@@ -6,10 +6,11 @@
 -->
 <html>
 	<head>
-		<title>emmanueldurodola</title>
+		<title>Emmanuel Durodola | Research</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/custom.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -18,7 +19,7 @@
 			<div id="page-wrapper">
 
 				<!-- Header -->
-					<header id="header"> <!-- class="alt"> -->
+					<header id="header">
 						<h1><a href="index.html">Emmanuel Durodola</a></h1>
 						<nav id="nav">
 							<ul>
@@ -29,7 +30,7 @@
 											<li><a href="index.html">Home</a></li>
 											<li><a href="about.html">About Me</a></li>
 											<li><a href="research.html">Research</a></li>
-											<li><a href="#">Outreach</a></li>
+											<li><a href="community.html">Community</a></li>
 											<li><a href="#footer">Contact Me</a></li>
 										</ul>
 									</div>
@@ -42,164 +43,124 @@
 					<article id="main">
 						<header>
 							<h2>My Research Projects</h2>
-							<p>Explore the research projects I've worked on by clicking on the panels below.</p>
+							<p>Explore the research projects I've worked on by clicking on the panel below.</p>
+							<ul class="actions special">
+								<li><a href="https://ui.adsabs.harvard.edu/search/fq=%7B!type%3Daqp%20v%3D%24fq_database%7D&fq_database=(database%3Aastronomy%20OR%20database%3Aphysics)&p_=0&q=author%3A%22Durodola%2C%20Emmanuel%22&sort=date%20desc%2C%20bibcode%20desc" class="button primary" target="_blank">Publications on ADS</a></li>
+							</ul>
 						</header>
 						<section class="wrapper style5">
 							<div id="container">
-								<div class="panel" data-target="popup1">                
+								<div class="panel" data-target="popup1">
 									<h2>What is the nature of Little Red Dots?</h2>
-									<p class="short-description">We explore the nature of high redshift   
-										optically red galaxies between 5 and 8.
-									</p>
-								</div>
-						
-								<div class="panel" data-target="popup2">
-									<h2> The history of Sag A*</h2>
-									<p class="short-description">
-										We use outputs from the Illustris-TNG simulation to explore the 
-										mass history of the (undermassive) super massive black hole at the center
-										of the Milky Way galaxy
-									</p>
-								</div>
-
-<!-- 								<div class="panel" data-target="popup3">
-									<h2> The Gravitational Wave Memory Effect </h2>
-									<p class="short-description">
-										We calculate the gravitational wave strain that is associated
-										with the non-linear memory effect from super masive black hole
-										binaries.
-									</p>
-								</div> -->
-
-								<div class="panel" data-target="popup4">
-									<h2> Search for DCBH galaxies</h2>
-									<p class="short-description">
-										We used archival Hubble Space Telescope data to find
-										candidate Direct Collapse Black Hole galaxies at z = 6.
-									</p>
-								</div>
-
-								<div class="panel" data-target="popup5">
-									<h2> Measuring Stellar Variability </h2>
-									<p class="short-description">
-										We analayzed the .
+									<p class="short-description">We explore the nature of high-redshift
+										optically red galaxies between z = 5 and 8 using SED fitting techniques.
 									</p>
 								</div>
 							</div>
 
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							
-							<div id="popup1" class="popup">
+		
+					<div class="inner">
+						<h3><u>Unpublished Projects</u></h3>
+						<ul>
+							<li>
+								<strong>The History of Sag A*</strong> &mdash; Using outputs from the Illustris-TNG simulation to explore the
+								mass history of the undermassive supermassive black hole at the center of the Milky Way galaxy.
+							</li>
+							<li>
+								<strong>Search for DCBH Galaxies</strong> &mdash; Used archival Hubble Space Telescope data to find
+								candidate Direct Collapse Black Hole galaxies at z = 6.
+							<em>Presented at the Banneker Institute Summer Symposium (2020).</em>
+							</li>
+							<li>
+								<strong>Measuring Stellar Variability</strong> &mdash; More information coming soon.
+							</li>
+						</ul>
+					</div>
+
+					<div id="popup1" class="popup">
 								<div class="popup-content">
-									<div class ="inner">
-										<h2>Exploring the AGN Fraction of a Sample of JWST's Little Red Dots at 4 < z < 8: <br> 
+									<div class="inner">
+										<h2>Exploring the AGN Fraction of a Sample of JWST's Little Red Dots at 4 &lt; z &lt; 8:
 											Overmassive Black Holes Are Strongly Favored</h2>
+
+										<!-- New version: separate paragraphs per section -->
 										<p><span class="image left"><img src="images/Red-blob-galaxy.jpg" alt="" /></span>
-										Background: Little Red Dots (LRD) are a class of high redshift (5 < z < 9), optically red, compact galaxies observed by the 
-										James Webb Space Telescope. The redshift range occupied by these galaxies makes them valuable to the field of galaxy evolution, as they are likley progenitors
-										of the massive galaxies we observe in the universe today. Various analysis of LRD have revealed some peculiar characteristics, such as high stellar masses given their compact nature,
-										overmassive black holes (in the case where LRD are AGN or host AGN), x-ray quiet, undetected in the infrared, Hα emission (with little to no Hβ emission), and the list goes on.
-										Our work here focuses on the result that suggests LRD host overmassive black holes. We wanted to determine if this result is agnostic to the 
-										parameter choice made during SED modeling. Specifically, we wanted to understand how different choices in how the AGN contribution is modeled affects the 
-										final black hole mass.
-										
-										
-										
-										<br><br>
-										<span class="image right"><img src="images/57356_test_plot.gif" alt="" /></span>
-										Methodology:
-										Using James Webb Space Telescope photometry presented in <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968....4P/abstract">Perez-Gonzalez+23</a>, we model the SED of LRD 
-										as either AGN, galaxy, or a composite model of both templates to determine the nature of these optically red, compact, high redshift galaxies.
+											<strong>Background:</strong> Little Red Dots (LRDs) are a class of high-redshift (5 &lt; z &lt; 9), optically red, compact galaxies
+											discovered by the James Webb Space Telescope. Their redshift range makes them particularly valuable to the study of galaxy evolution,
+											as they are likely progenitors of the massive galaxies we observe in the local universe.
+											Analyses of LRDs have uncovered a number of peculiar characteristics: high stellar masses relative to their compact size,
+											potentially overmassive black holes, X-ray faintness, infrared non-detections, and broad H&alpha; emission with weak or absent H&beta;.
+											Our work focuses specifically on the claim that LRDs host overmassive black holes, and asks whether this result holds
+											regardless of the assumptions made during SED modeling — in particular, how the modeled AGN contribution affects the inferred black hole mass.
+										</p>
 
-										
-										SED modelling is a technique where we are able to individually model the different components of a galaxy that come together to form the 
-										emission we observe. Depending on the resulting contribution from each component, we can extract the likely nature of the galaxy star forming, AGN or composite.  
+										<p><span class="image right"><img src="images/57356_test_plot.gif" alt="" /></span>
+											<strong>Methodology:</strong> Using JWST photometry from
+											<a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968....4P/abstract">Perez-Gonzalez+23</a>,
+											we modeled the SEDs of LRDs as pure AGN, pure galaxy, or a composite of both, in order to characterize the nature of these sources.
+											SED modeling decomposes the observed emission into contributions from different physical components — in this case star formation and AGN activity —
+											allowing us to infer the dominant source of emission and extract physical properties such as black hole mass.
+											We used the publicly available <a href="https://cigale.lam.fr" target="_blank">CIGALE</a> SED modeling code, varying the AGN contribution from 0% to 99%
+											to systematically probe all three scenarios.
+										</p>
 
-									
-										We used the publicly availble CIGALE SED modeling code from <a href="#">Boquien+23</a>, to analyze the Litle Red Dot photometry. 
-										We varied the AGN contribution from 0% to maximal 99%, allowing us to test all three scenarios (AGN, galaxy, composite).
+										<p><span class="image left"><img src="images/fixed_best_scatter.pdf" alt="" /></span>
+											<strong>Results:</strong> We were the first to demonstrate that the overmassive black hole result in LRDs depends
+											on the assumed AGN contribution during SED fitting.
+											For LRDs with an AGN contribution below 20%, the inferred black hole mass is consistent with the local
+											<a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...813...82R/abstract">Reines &amp; Volonteri 2015</a> scaling relation.
+											Contributions between 20–40% yield moderately overmassive black holes, while contributions above 40% produce
+											extremely overmassive black holes consistent with the high-redshift
+											<a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...957L...3P/abstract">Pacucci+23</a> relation.
+											Additional results can be found in the full paper
+											<a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240610329D/abstract">here</a>.
+										</p>
 
-			
-										
+										<!-- Original version (single paragraph with br breaks) — restore if figures break
+										<p><span class="image left"><img src="images/Red-blob-galaxy.jpg" alt="" /></span>
+											<strong>Background:</strong> Little Red Dots (LRDs) are a class of high-redshift (5 &lt; z &lt; 9), optically red, compact galaxies observed by the
+											James Webb Space Telescope. The redshift range occupied by these galaxies makes them valuable to the field of galaxy evolution,
+											as they are likely progenitors of the massive galaxies we observe in the universe today.
+											Various analyses of LRDs have revealed some peculiar characteristics, such as high stellar masses given their compact nature,
+											overmassive black holes (in the case where LRDs are AGN or host AGN), X-ray quiet, undetected in the infrared, H&alpha; emission
+											(with little to no H&beta; emission), and more.
+											Our work focuses on the result that suggests LRDs host overmassive black holes. We wanted to determine whether this result is agnostic to the
+											parameter choices made during SED modeling — specifically, how different choices in modeling the AGN contribution affect the final black hole mass.
+											<br><br>
+											<span class="image right"><img src="images/57356_test_plot.gif" alt="" /></span>
+											<strong>Methodology:</strong>
+											Using James Webb Space Telescope photometry presented in <a href="https://ui.adsabs.harvard.edu/abs/2024ApJ...968....4P/abstract">Perez-Gonzalez+23</a>,
+											we model the SED of LRDs as either AGN, galaxy, or a composite model of both templates to determine the nature of these optically red, compact, high-redshift galaxies.
+											SED modeling is a technique that allows us to individually model the different components of a galaxy that come together to form the
+											emission we observe. Depending on the resulting contribution from each component, we can extract the likely nature of the galaxy — star-forming, AGN, or composite.
+											We used the publicly available CIGALE SED modeling code from <a href="#">Boquien+23</a> to analyze the Little Red Dot photometry,
+											varying the AGN contribution from 0% to a maximal 99%, allowing us to test all three scenarios.
+											<br><br>
+											<span class="image left"><img src="images/fixed_best_scatter.pdf" alt="" /></span>
+											<strong>Results:</strong> Through this analysis, we became the first group to show that the overmassive black hole result from LRDs is dependent on the strength of the AGN contribution.
+											For LRDs hosting a modest AGN contribution of &lt; 20%, the black hole mass is in agreement with the local <a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...813...82R/abstract">Reines &amp; Volonteri 2015</a> relationship,
+											while &gt; 20% implies an overmassive black hole. An AGN contribution between 20% and 40% corresponds to a moderately overmassive black hole,
+											while &gt; 40% results in extremely overmassive black holes, favoring the <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...957L...3P/abstract">Pacucci+23</a> high-redshift relationship.
+											<br>
+											There are more results in the paper, which can be found <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240610329D/abstract">here</a>.
+										</p>
+										-->
 
-										<br><br>
-										<span class="image left"><img src="images/fixed_best_scatter.pdf" alt="" /></span>
-										Results: Through this analysis, we became the first group to show that the overmassive black hole result from LRD is dependent on the strength of the AGN contribution.
-										For LRD hosting a modest AGN < 20%, the black hole mass is in agreement with the local <a href="https://ui.adsabs.harvard.edu/abs/2015ApJ...813...82R/abstract">Reines+Volonteri+15</a> relationship, while > 20% implies an overmassive
-										black hole. An AGN contribution between 20% and 40% corresponds to a moderately overmassive black hole, while > 40% results in extremely overmassive black holes, 
-										favoring the <a href="https://ui.adsabs.harvard.edu/abs/2023ApJ...957L...3P/abstract">Pacucci+23</a> high redshift relationship. 
-										<br>
-										There are more interesting results in the paper, which can be found <a href="https://ui.adsabs.harvard.edu/abs/2024arXiv240610329D/abstract">here</a>.
-										
-								
-										
-
-
-									</p>
 										<button class="close">Close</button>
 									</div>
 								</div>
 							</div>
-						
-							<div id="popup2" class="popup">
-								<div class="popup-content">
-									<h2>Second year project: How does a black hole grow: An analysis using the Illustris TNG simulation</h2>
-									<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>
-										More information to come soon!
-<!-- 										Background: The goal of this project was to leverage the Illustris TNG simulation outputs to try and understand the 
-										formation history of Sagittarius A*,
-										the black hole at the center of the milky way galaxy. When comparing the mass of Sag A* to -->
-										
-									</p>
-								
-									<button class="close">Close</button>
-								</div>
-							</div>
 
-							<div id="popup3" class="popup">
-								<div class="popup-content">
-									<h2>Search for DCBH galaxies using HST</h2>
-									<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>
-										More information to come soon!
-									</p>
-								
-									<button class="close">Close</button>
-								</div>
-							</div>
-
-							<div id="popup4" class="popup">
-								<div class="popup-content">
-									<h2>Measuring Stellar Variability</h2>
-									<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>
-										More information to come soon!
-									</p>
-								
-									<button class="close">Close</button>
-								</div>
-							</div>
-							
 						</section>
 					</article>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<ul class="icons">
-							<!-- <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li> -->
 							<li><a href="mailto:emmanuel.a.durodola.gr@dartmouth.edu" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>&copy; Emmanuel Durodola</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 
@@ -218,5 +179,3 @@
 	</body>
 
 </html>
-
-

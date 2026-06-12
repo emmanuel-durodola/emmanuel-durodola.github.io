@@ -4096,8 +4096,7 @@ body.is-mobile #about > header {
 	background-color: rgb(255, 255, 255);
 	border-radius: 4px;
 	border: 2px solid black;
-	min-height: 400px;
-	max-height: 400px; 
+	min-height: 150px;
     /*display: flex;
     flex-direction: column;*/
 	bottom: 3;
